@@ -193,7 +193,7 @@
   </e:emblembook-metadata>
 
   <p:choose>
-    <p:when test="$emblems">
+    <p:when test="$emblems = true()">
       <e:store-emblem-instances>
         <p:with-option name="targetBaseDir" select="$emblems"/>
         <p:input port="source">
@@ -201,6 +201,9 @@
         </p:input>
       </e:store-emblem-instances>
     </p:when>
+    <p:otherwise>
+      <p:sink/>
+    </p:otherwise>
   </p:choose>
 
   <p:wrap-sequence wrapper="rdf:RDF" name="wrap-emblems">
