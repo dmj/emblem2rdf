@@ -1,0 +1,7 @@
+#+TITLE: The Wolfenbüttel emblem2rdf pipeline
+#+AUTHOR: David Maus
+#+DATE: 2017-02-09
+
+*emblem2rdf* is an XProc processing pipeline that converts emblem book descriptions into RDF following the Wolfenbüttel
+Core Emblem Ontology (to be published). The pipeline is developed at the [[http://www.hab.de][Herzog August Bibliothek Wolfenbüttel]] in the
+course of the DFG-funded project [[http://gepris.dfg.de/gepris/projekt/265430826][Emblematica Online - Linked Open Emblem Data]].

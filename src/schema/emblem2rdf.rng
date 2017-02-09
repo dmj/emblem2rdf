@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  RelaxNG schema for normalized RDF/XML emblem data
+  
+  Author: David Maus <maus@hab.de>
+  Timestamp: <2016-12-24 11:53:12 dmaus>
+  
+-->
+<grammar xmlns:cnt="http://www.w3.org/2011/content#" xmlns:emblem="http://uri.hab.de/ontology/emblem#" xmlns:dct="http://purl.org/dc/terms/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns="http://relaxng.org/ns/structure/1.0" datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes">
+  <start>
+    <choice>
+      <ref name="Emblem"/>
+      <ref name="RDFWrapper"/>
+    </choice>
+  </start>
+  <define name="RDFWrapper">
+    <element name="rdf:RDF">
+      <oneOrMore>
+        <ref name="Emblem"/>
+      </oneOrMore>
+    </element>
+  </define>
+  <define name="Emblem">
+    <element name="emblem:Emblem">
+      <ref name="model.rdf.subject"/>
+      <ref name="model.emblem.webresource"/>
+      <optional>
+        <element name="dct:isPartOf">
+          <zeroOrMore>
+            <ref name="_anyElement_"/>
+          </zeroOrMore>
+        </element>
+      </optional>
+      <element name="skos:prefLabel">
+        <text/>
+      </element>
+      <zeroOrMore>
+        <element name="emblem:hasPart">
+          <ref name="Motto"/>
+        </element>
+      </zeroOrMore>
+      <zeroOrMore>
+        <element name="emblem:hasPart">
+          <ref name="Pictura"/>
+        </element>
+      </zeroOrMore>
+      <zeroOrMore>
+        <element name="emblem:hasPart">
+          <ref name="Subscriptio"/>
+        </element>
+      </zeroOrMore>
+    </element>
+  </define>
+  <define name="Motto">
+    <element name="emblem:Motto">
+      <ref name="model.rdf.subject"/>
+      <ref name="model.emblem.webresource"/>
+      <zeroOrMore>
+        <element name="emblem:hasTextSegment">
+          <ref name="TextSegment"/>
+        </element>
+      </zeroOrMore>
+    </element>
+  </define>
+  <define name="Subscriptio">
+    <element name="emblem:Subscriptio">
+      <ref name="model.rdf.subject"/>
+      <ref name="model.emblem.webresource"/>
+      <zeroOrMore>
+        <element name="emblem:hasTextSegment">
+          <ref name="TextSegment"/>
+        </element>
+      </zeroOrMore>
+    </element>
+  </define>
+  <define name="Pictura">
+    <element name="emblem:Pictura">
+      <ref name="model.rdf.subject"/>
+      <ref name="model.emblem.webresource"/>
+      <element name="dct:medium">
+        <element name="skos:Concept">
+          <ref name="model.rdf.subject"/>
+          <element name="skos:prefLabel">
+            <attribute name="xml:lang">
+              <value>de</value>
+            </attribute>
+            <text/>
+          </element>
+        </element>
+      </element>
+      <zeroOrMore>
+        <element name="dct:subject">
+          <element name="skos:Concept">
+            <ref name="model.rdf.subject"/>
+            <element name="skos:notation">
+              <optional>
+                <attribute name="rdf:datatype">
+                  <data type="anyURI"/>
+                </attribute>
+              </optional>
+              <text/>
+            </element>
+            <optional>
+              <element name="skos:prefLabel">
+                <optional>
+                  <attribute name="xml:lang">
+                    <data type="language"/>
+                  </attribute>
+                </optional>
+                <text/>
+              </element>
+            </optional>
+          </element>
+        </element>
+      </zeroOrMore>
+    </element>
+  </define>
+  <define name="TextSegment">
+    <element name="emblem:TextSegment">
+      <ref name="model.rdf.subject"/>
+      <ref name="model.emblem.webresource"/>
+      <optional>
+        <ref name="model.dct.language"/>
+      </optional>
+      <zeroOrMore>
+        <element name="dct:hasFormat">
+          <ref name="Transcription"/>
+        </element>
+      </zeroOrMore>
+    </element>
+  </define>
+  <define name="Transcription">
+    <optional>
+      <element name="cnt:ContentAsXML">
+        <element name="dct:format">
+          <value>application/tei+xml</value>
+        </element>
+        <element name="cnt:rest">
+          <attribute name="rdf:parseType">
+            <value>Literal</value>
+          </attribute>
+          <ref name="_anyElement_"/>
+        </element>
+      </element>
+    </optional>
+  </define>
+  <define name="model.emblem.webresource">
+    <optional>
+      <element name="emblem:isShownAt">
+        <attribute name="rdf:resource">
+          <data type="anyURI"/>
+        </attribute>
+        <empty/>
+      </element>
+    </optional>
+    <optional>
+      <element name="emblem:isShownBy">
+        <attribute name="rdf:resource">
+          <data type="anyURI"/>
+        </attribute>
+        <empty/>
+      </element>
+    </optional>
+  </define>
+  <define name="model.rdf.subject">
+    <optional>
+      <attribute name="rdf:about">
+        <data type="anyURI"/>
+      </attribute>
+    </optional>
+  </define>
+  <define name="model.dct.language">
+    <element name="dct:language">
+      <attribute name="rdf:datatype">
+        <value>http://purl.org/dc/terms/RFC4646</value>
+      </attribute>
+      <data type="language"/>
+    </element>
+  </define>
+  <define name="_anyElement_">
+    <element>
+      <anyName/>
+      <zeroOrMore>
+        <choice>
+          <attribute>
+            <anyName/>
+          </attribute>
+          <text/>
+          <ref name="_anyElement_"/>
+        </choice>
+      </zeroOrMore>
+    </element>
+  </define>
+</grammar>

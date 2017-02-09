@@ -1,0 +1,133 @@
+# RelaxNG schema for normalized RDF/XML emblem data
+#
+# Author: David Maus <maus@hab.de>
+# Timestamp: <2016-12-24 11:53:12 dmaus>
+#
+
+namespace emblem = "http://uri.hab.de/ontology/emblem#"
+
+namespace bibo = "http://purl.org/ontology/bibo/"
+namespace skos = "http://www.w3.org/2004/02/skos/core#"
+
+namespace rdf = "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+namespace dct = "http://purl.org/dc/terms/"
+namespace cnt = "http://www.w3.org/2011/content#"
+
+start = Emblem | RDFWrapper
+
+RDFWrapper =
+   element rdf:RDF {
+      Emblem+
+   }
+
+Emblem =
+   element emblem:Emblem {
+      model.rdf.subject,
+      model.emblem.webresource,
+      element dct:isPartOf {
+            _anyElement_*
+      }?,
+      element skos:prefLabel {
+         text
+      },
+      element emblem:hasPart {
+         Motto
+      }*,
+      element emblem:hasPart {
+         Pictura
+      }*,
+      element emblem:hasPart {
+         Subscriptio
+      }*
+   }
+
+Motto =
+   element emblem:Motto {
+      model.rdf.subject,
+      model.emblem.webresource,
+      element emblem:hasTextSegment {
+         TextSegment
+      }*
+   }
+
+Subscriptio =
+   element emblem:Subscriptio {
+      model.rdf.subject,
+      model.emblem.webresource,
+      element emblem:hasTextSegment {
+         TextSegment
+      }*
+   }
+
+Pictura =
+   element emblem:Pictura {
+      model.rdf.subject,
+      model.emblem.webresource,
+      element dct:medium {
+         element skos:Concept {
+            model.rdf.subject,
+            element skos:prefLabel {
+               attribute xml:lang { "de" },
+               text
+            }
+         }
+      },
+      element dct:subject {
+         element skos:Concept {
+            model.rdf.subject,
+            element skos:notation {
+               attribute rdf:datatype { xsd:anyURI }?,
+               text
+            },
+            element skos:prefLabel {
+               attribute xml:lang { xsd:language }?,
+               text
+            }?
+         }
+      }*
+   }
+
+TextSegment =
+   element emblem:TextSegment {
+      model.rdf.subject,
+      model.emblem.webresource,
+      model.dct.language?,
+      element dct:hasFormat {
+         Transcription
+      }*
+   }
+
+Transcription =
+   element cnt:ContentAsXML {
+      element dct:format {
+         "application/tei+xml"
+      },
+      element cnt:rest {
+         attribute rdf:parseType { "Literal" },
+         _anyElement_
+      }
+   }?
+
+model.emblem.webresource =
+   element emblem:isShownAt {
+      attribute rdf:resource { xsd:anyURI },
+      empty
+   }?,
+   element emblem:isShownBy {
+      attribute rdf:resource { xsd:anyURI },
+      empty
+   }?
+
+model.rdf.subject =
+   attribute rdf:about { xsd:anyURI }?
+
+model.dct.language =
+   element dct:language {
+      attribute rdf:datatype { "http://purl.org/dc/terms/RFC4646" },
+      xsd:language
+   }
+
+_anyElement_ =
+   element * {
+      ( attribute * { text } | text | _anyElement_ )*
+   }

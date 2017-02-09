@@ -1,0 +1,1734 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="oai2.xsl"?>
+<OAI-PMH xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/ http://www.openarchives.org/OAI/2.0/OAI-PMH.xsd">
+  <responseDate>2016-12-24T16:04:48Z</responseDate>
+  <request verb="GetRecord" metadataPrefix="emblem" identifier="oai:diglib.hab.de:ppn_334708613">http://oai.hab.de/</request>
+  <GetRecord xmlns:emblem="http://diglib.hab.de/rules/schema/emblem" xmlns:mods="http://www.loc.gov/mods/v3" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:tei="http://www.tei-c.org/ns/1.0">
+    <record xmlns:emblem="http://diglib.hab.de/rules/schema/emblem" xmlns:mods="http://www.loc.gov/mods/v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:tei="http://www.tei-c.org/ns/1.0">
+      <header>
+        <identifier>oai:diglib.hab.de:ppn_334708613</identifier>
+        <datestamp>2016-07-13</datestamp>
+        <setSpec>ddb</setSpec>
+        <setSpec>embl</setSpec>
+      </header>
+      <metadata xmlns:emblem="http://diglib.hab.de/rules/schema/emblem" xmlns:mods="http://www.loc.gov/mods/v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:tei="http://www.tei-c.org/ns/1.0" xsi:schemaLocation="http://diglib.hab.de/rules/schema/emblem http://diglib.hab.de/rules/schema/emblem/emblem-1-2.xsd">
+        <emblem:biblioDesc xmlns:emblem="http://diglib.hab.de/rules/schema/emblem" xmlns:mods="http://www.loc.gov/mods/v3" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:tei="http://www.tei-c.org/ns/1.0" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <mods:mods xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.loc.gov/mods/v3 http://www.loc.gov/standards/mods/v3/mods-3-4.xsd">
+            <mods:titleInfo>
+              <mods:title>Emblemata Sacra. Hoc est, Decades Quinque Emblematum Ex Sacra Scriptura, De dulcissimo Nomine &amp; Cruce Jesu Christi, figuris æneis incisorum. Pars ...</mods:title>
+            </mods:titleInfo>
+            <mods:identifier type="fingerprint">t.s, S.s. r?us MaCh 7 1624R 1</mods:identifier>
+            <mods:identifier type="purl">http://diglib.hab.de/drucke/th-470/start.htm</mods:identifier>
+            <mods:originInfo>
+              <mods:dateIssued keyDate="yes" encoding="iso8601">1624</mods:dateIssued>
+              <mods:place>
+                <mods:placeTerm type="text">Francofvrti</mods:placeTerm>
+              </mods:place>
+              <mods:publisher>Jennisius</mods:publisher>
+            </mods:originInfo>
+            <mods:originInfo>
+              <mods:dateCaptured encoding="iso8601">2001</mods:dateCaptured>
+              <mods:publisher>HAB Wolfenbüttel</mods:publisher>
+              <mods:edition>[Electronic ed.]</mods:edition>
+            </mods:originInfo>
+            <mods:name type="personal" valueURI="http://d-nb.info/gnd/104279907">
+              <mods:namePart type="given">Conrad</mods:namePart>
+              <mods:namePart type="family">Bachmann</mods:namePart>
+              <mods:displayForm>Bachmann, Conrad</mods:displayForm>
+              <mods:role>
+                <mods:roleTerm authority="marcrelator" type="code" valueURI="http://id.loc.gov/vocabulary/relators/oth">oth</mods:roleTerm>
+              </mods:role>
+            </mods:name>
+            <mods:name type="personal">
+              <mods:namePart type="given">M. C.</mods:namePart>
+              <mods:namePart type="family">R.</mods:namePart>
+              <mods:displayForm>R., M. C.</mods:displayForm>
+              <mods:role>
+                <mods:roleTerm authority="marcrelator" type="code" valueURI="http://id.loc.gov/vocabulary/relators/oth">oth</mods:roleTerm>
+              </mods:role>
+            </mods:name>
+            <mods:name type="personal" valueURI="http://d-nb.info/gnd/119180049">
+              <mods:namePart type="given">Daniel</mods:namePart>
+              <mods:namePart type="family">Cramer</mods:namePart>
+              <mods:displayForm>Cramer, Daniel</mods:displayForm>
+              <mods:role>
+                <mods:roleTerm authority="marcrelator" type="code" valueURI="http://id.loc.gov/vocabulary/relators/oth">oth</mods:roleTerm>
+              </mods:role>
+            </mods:name>
+            <mods:name type="personal" valueURI="http://d-nb.info/gnd/124407811">
+              <mods:namePart type="given">Lucas</mods:namePart>
+              <mods:namePart type="family">Jennis</mods:namePart>
+              <mods:displayForm>Jennis, Lucas</mods:displayForm>
+              <mods:role>
+                <mods:roleTerm authority="marcrelator" type="code" valueURI="http://id.loc.gov/vocabulary/relators/prt">prt</mods:roleTerm>
+              </mods:role>
+            </mods:name>
+            <mods:language>
+              <mods:languageTerm type="code" authority="iso639-2b">lat</mods:languageTerm>
+            </mods:language>
+            <mods:language>
+              <mods:languageTerm type="code" authority="iso639-2b">ger</mods:languageTerm>
+            </mods:language>
+            <mods:language>
+              <mods:languageTerm type="code" authority="iso639-2b">fre</mods:languageTerm>
+            </mods:language>
+            <mods:language>
+              <mods:languageTerm type="code" authority="iso639-2b">ita</mods:languageTerm>
+            </mods:language>
+            <mods:relatedItem type="series">
+              <mods:titleInfo>
+                <mods:title>Emblematica Online</mods:title>
+              </mods:titleInfo>
+            </mods:relatedItem>
+            <mods:genre authority="aad">Emblembuch</mods:genre>
+            <mods:physicalDescription>
+              <mods:extent>213, [1] S</mods:extent>
+              <mods:extent>Ill. (Kupferst.)</mods:extent>
+            </mods:physicalDescription>
+            <mods:relatedItem type="host">
+              <mods:titleInfo>
+                <mods:title>Emblemata Sacra. Hoc est, Decades Quinque Emblematum Ex Sacra Scriptura, De dulcissimo Nomine &amp; Cruce Jesu Christi, figuris æneis incisorum. Pars ...</mods:title>
+              </mods:titleInfo>
+            </mods:relatedItem>
+            <mods:part order="1">
+              <mods:detail type="volume">
+                <mods:number>Ps. 1</mods:number>
+              </mods:detail>
+            </mods:part>
+            <mods:recordInfo>
+              <mods:recordIdentifier source="DE-23">334708613</mods:recordIdentifier>
+              <mods:recordOrigin xml:lang="en">Converted from PICA using a local XSL transformation script</mods:recordOrigin>
+              <mods:recordContentSource authority="marcorg">DE-23</mods:recordContentSource>
+            </mods:recordInfo>
+          </mods:mods>
+          <emblem:copyDesc>
+            <emblem:copyID>http://diglib.hab.de/drucke/th-470/start.htm</emblem:copyID>
+            <emblem:owner countryCode="DE" institutionCode="hab">Herzog August Bibliothek Wolfenbüttel</emblem:owner>
+          </emblem:copyDesc>
+          <emblem:emblem globalID="http://hdl.handle.net/10111/EmblemRegistry:E004930">
+            <emblem:motto>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00019" page="16" xml:lang="la">
+                <tei:p xmlns="http://www.tei-c.org/ns/1.0" xml:lang="la">Mollesco.</tei:p>
+              </emblem:transcription>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00019" page="16" xml:lang="de">
+                <tei:p xmlns="http://www.tei-c.org/ns/1.0" xml:lang="de">Ich werd weych.</tei:p>
+              </emblem:transcription>
+            </emblem:motto>
+            <emblem:pictura medium="engraving" xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00020"/>
+            <emblem:subscriptio>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00019" page="16" xml:lang="la"/>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00019" page="16" xml:lang="de"/>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00020" page="17" xml:lang="la"/>
+            </emblem:subscriptio>
+          </emblem:emblem>
+          <emblem:emblem globalID="http://hdl.handle.net/10111/EmblemRegistry:E004931">
+            <emblem:motto>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00021" page="20" xml:lang="la">
+                <tei:p xmlns="http://www.tei-c.org/ns/1.0" xml:lang="la">Cresco.</tei:p>
+              </emblem:transcription>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00021" page="20" xml:lang="de">
+                <tei:p xmlns="http://www.tei-c.org/ns/1.0" xml:lang="de">Ich wachse.</tei:p>
+              </emblem:transcription>
+            </emblem:motto>
+            <emblem:pictura medium="engraving" xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00022"/>
+            <emblem:subscriptio>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00021" page="20" xml:lang="la"/>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00021" page="20" xml:lang="de"/>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00022" page="21" xml:lang="la"/>
+            </emblem:subscriptio>
+          </emblem:emblem>
+          <emblem:emblem globalID="http://hdl.handle.net/10111/EmblemRegistry:E004932">
+            <emblem:motto>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00023" page="24" xml:lang="la">
+                <tei:p xmlns="http://www.tei-c.org/ns/1.0" xml:lang="la">Alta Peto.</tei:p>
+              </emblem:transcription>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00023" page="24" xml:lang="de">
+                <tei:p xmlns="http://www.tei-c.org/ns/1.0" xml:lang="de">Ich fahr in die Höhe.</tei:p>
+              </emblem:transcription>
+            </emblem:motto>
+            <emblem:pictura medium="engraving" xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00024"/>
+            <emblem:subscriptio>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00023" page="24" xml:lang="la"/>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00023" page="24" xml:lang="de"/>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00024" page="25" xml:lang="la"/>
+            </emblem:subscriptio>
+          </emblem:emblem>
+          <emblem:emblem globalID="http://hdl.handle.net/10111/EmblemRegistry:E004933">
+            <emblem:motto>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00025" page="28" xml:lang="la">
+                <tei:p xmlns="http://www.tei-c.org/ns/1.0" xml:lang="la">Amo.</tei:p>
+              </emblem:transcription>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00025" page="28" xml:lang="de">
+                <tei:p xmlns="http://www.tei-c.org/ns/1.0" xml:lang="de">Ich liebe.</tei:p>
+              </emblem:transcription>
+            </emblem:motto>
+            <emblem:pictura medium="engraving" xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00026"/>
+            <emblem:subscriptio>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00025" page="28" xml:lang="la"/>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00025" page="28" xml:lang="de"/>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00026" page="29" xml:lang="la"/>
+            </emblem:subscriptio>
+          </emblem:emblem>
+          <emblem:emblem globalID="http://hdl.handle.net/10111/EmblemRegistry:E004934">
+            <emblem:motto>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00027" page="32" xml:lang="la">
+                <tei:p xmlns="http://www.tei-c.org/ns/1.0" xml:lang="la">Lateo</tei:p>
+              </emblem:transcription>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00027" page="32" xml:lang="de">
+                <tei:p xmlns="http://www.tei-c.org/ns/1.0" xml:lang="de">Ich lig verborgen.</tei:p>
+              </emblem:transcription>
+            </emblem:motto>
+            <emblem:pictura medium="engraving" xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00028"/>
+            <emblem:subscriptio>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00027" page="32" xml:lang="la"/>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00027" page="32" xml:lang="de"/>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00028" page="33" xml:lang="la"/>
+            </emblem:subscriptio>
+          </emblem:emblem>
+          <emblem:emblem globalID="http://hdl.handle.net/10111/EmblemRegistry:E004935">
+            <emblem:motto>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00029" page="36" xml:lang="la">
+                <tei:p xmlns="http://www.tei-c.org/ns/1.0" xml:lang="la">Illuminor.</tei:p>
+              </emblem:transcription>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00029" page="36" xml:lang="de">
+                <tei:p xmlns="http://www.tei-c.org/ns/1.0" xml:lang="de">Ich werd erleucht.</tei:p>
+              </emblem:transcription>
+            </emblem:motto>
+            <emblem:pictura medium="engraving" xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00030"/>
+            <emblem:subscriptio>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00029" page="36" xml:lang="la"/>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00029" page="36" xml:lang="de"/>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00030" page="37" xml:lang="la"/>
+            </emblem:subscriptio>
+          </emblem:emblem>
+          <emblem:emblem globalID="http://hdl.handle.net/10111/EmblemRegistry:E004936">
+            <emblem:motto>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00031" page="40" xml:lang="la">
+                <tei:p xmlns="http://www.tei-c.org/ns/1.0" xml:lang="la">Constans Sum.</tei:p>
+              </emblem:transcription>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00031" page="40" xml:lang="de">
+                <tei:p xmlns="http://www.tei-c.org/ns/1.0" xml:lang="de">Ich bin bestendig.</tei:p>
+              </emblem:transcription>
+            </emblem:motto>
+            <emblem:pictura medium="engraving" xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00032"/>
+            <emblem:subscriptio>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00031" page="40" xml:lang="la"/>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00031" page="40" xml:lang="de"/>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00032" page="41" xml:lang="la"/>
+            </emblem:subscriptio>
+          </emblem:emblem>
+          <emblem:emblem globalID="http://hdl.handle.net/10111/EmblemRegistry:E004937">
+            <emblem:motto>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00033" page="44" xml:lang="la">
+                <tei:p xmlns="http://www.tei-c.org/ns/1.0" xml:lang="la">Suspiro.</tei:p>
+              </emblem:transcription>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00033" page="44" xml:lang="de">
+                <tei:p xmlns="http://www.tei-c.org/ns/1.0" xml:lang="de">Ich seufftze.</tei:p>
+              </emblem:transcription>
+            </emblem:motto>
+            <emblem:pictura medium="engraving" xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00034"/>
+            <emblem:subscriptio>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00033" page="44" xml:lang="la"/>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00033" page="44" xml:lang="de"/>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00034" page="45" xml:lang="la"/>
+            </emblem:subscriptio>
+          </emblem:emblem>
+          <emblem:emblem globalID="http://hdl.handle.net/10111/EmblemRegistry:E004938">
+            <emblem:motto>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00035" page="48" xml:lang="la">
+                <tei:p xmlns="http://www.tei-c.org/ns/1.0" xml:lang="la">Liberor</tei:p>
+              </emblem:transcription>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00035" page="48" xml:lang="de">
+                <tei:p xmlns="http://www.tei-c.org/ns/1.0" xml:lang="de">Ich werd erlößt.</tei:p>
+              </emblem:transcription>
+            </emblem:motto>
+            <emblem:pictura medium="engraving" xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00036"/>
+            <emblem:subscriptio>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00035" page="48" xml:lang="la"/>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00035" page="48" xml:lang="de"/>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00036" page="49" xml:lang="la"/>
+            </emblem:subscriptio>
+          </emblem:emblem>
+          <emblem:emblem globalID="http://hdl.handle.net/10111/EmblemRegistry:E004939">
+            <emblem:motto>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00037" page="52" xml:lang="la">
+                <tei:p xmlns="http://www.tei-c.org/ns/1.0" xml:lang="la">Revivisco.</tei:p>
+              </emblem:transcription>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00037" page="52" xml:lang="de">
+                <tei:p xmlns="http://www.tei-c.org/ns/1.0" xml:lang="de">Ich werd wieder lebend.</tei:p>
+              </emblem:transcription>
+            </emblem:motto>
+            <emblem:pictura medium="engraving" xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00038"/>
+            <emblem:subscriptio>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00037" page="52" xml:lang="la"/>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00037" page="52" xml:lang="de"/>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00038" page="53" xml:lang="la"/>
+            </emblem:subscriptio>
+          </emblem:emblem>
+          <emblem:emblem globalID="http://hdl.handle.net/10111/EmblemRegistry:E004940">
+            <emblem:motto>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00039" page="56" xml:lang="la">
+                <tei:p xmlns="http://www.tei-c.org/ns/1.0" xml:lang="la">Vivo</tei:p>
+              </emblem:transcription>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00039" page="56" xml:lang="de">
+                <tei:p xmlns="http://www.tei-c.org/ns/1.0" xml:lang="de">Ich lebe.</tei:p>
+              </emblem:transcription>
+            </emblem:motto>
+            <emblem:pictura medium="engraving" xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00040"/>
+            <emblem:subscriptio>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00039" page="56" xml:lang="la"/>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00039" page="56" xml:lang="de"/>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00040" page="57" xml:lang="la"/>
+            </emblem:subscriptio>
+          </emblem:emblem>
+          <emblem:emblem globalID="http://hdl.handle.net/10111/EmblemRegistry:E004041">
+            <emblem:motto>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00041" page="60" xml:lang="la">
+                <tei:p xmlns="http://www.tei-c.org/ns/1.0" xml:lang="la">Sanor.</tei:p>
+              </emblem:transcription>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00041" page="60" xml:lang="de">
+                <tei:p xmlns="http://www.tei-c.org/ns/1.0" xml:lang="de">Ich werd gesundt.</tei:p>
+              </emblem:transcription>
+            </emblem:motto>
+            <emblem:subscriptio>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00041" page="60" xml:lang="la"/>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00041" page="60" xml:lang="de"/>
+            </emblem:subscriptio>
+          </emblem:emblem>
+          <emblem:emblem globalID="http://hdl.handle.net/10111/EmblemRegistry:E004941">
+            <emblem:pictura medium="engraving" xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00042"/>
+            <emblem:subscriptio>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00042" page="61" xml:lang="la"/>
+            </emblem:subscriptio>
+          </emblem:emblem>
+          <emblem:emblem globalID="http://hdl.handle.net/10111/EmblemRegistry:E004942">
+            <emblem:motto>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00043" page="64" xml:lang="la">
+                <tei:p xmlns="http://www.tei-c.org/ns/1.0" xml:lang="la">Periclitor.</tei:p>
+              </emblem:transcription>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00043" page="64" xml:lang="de">
+                <tei:p xmlns="http://www.tei-c.org/ns/1.0" xml:lang="de">Ich leide Gefahr.</tei:p>
+              </emblem:transcription>
+            </emblem:motto>
+            <emblem:pictura medium="engraving" xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00044"/>
+            <emblem:subscriptio>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00043" page="64" xml:lang="la"/>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00043" page="64" xml:lang="de"/>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00044" page="65" xml:lang="la"/>
+            </emblem:subscriptio>
+          </emblem:emblem>
+          <emblem:emblem globalID="http://hdl.handle.net/10111/EmblemRegistry:E004943">
+            <emblem:motto>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00045" page="68" xml:lang="la">
+                <tei:p xmlns="http://www.tei-c.org/ns/1.0" xml:lang="la">Crucifigor</tei:p>
+              </emblem:transcription>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00045" page="68" xml:lang="de">
+                <tei:p xmlns="http://www.tei-c.org/ns/1.0" xml:lang="de">Ich werde gecreutziget.</tei:p>
+              </emblem:transcription>
+            </emblem:motto>
+            <emblem:pictura medium="engraving" xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00046"/>
+            <emblem:subscriptio>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00045" page="68" xml:lang="la"/>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00045" page="68" xml:lang="de"/>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00046" page="69" xml:lang="la"/>
+            </emblem:subscriptio>
+          </emblem:emblem>
+          <emblem:emblem globalID="http://hdl.handle.net/10111/EmblemRegistry:E004944">
+            <emblem:motto>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00047" page="72" xml:lang="la">
+                <tei:p xmlns="http://www.tei-c.org/ns/1.0" xml:lang="la">Meditor.</tei:p>
+              </emblem:transcription>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00047" page="72" xml:lang="de">
+                <tei:p xmlns="http://www.tei-c.org/ns/1.0" xml:lang="de">Ich betrachte.</tei:p>
+              </emblem:transcription>
+            </emblem:motto>
+            <emblem:pictura medium="engraving" xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00048"/>
+            <emblem:subscriptio>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00047" page="72" xml:lang="la"/>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00047" page="72" xml:lang="de"/>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00048" page="73" xml:lang="la"/>
+            </emblem:subscriptio>
+          </emblem:emblem>
+          <emblem:emblem globalID="http://hdl.handle.net/10111/EmblemRegistry:E004945">
+            <emblem:motto>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00049" page="76" xml:lang="la">
+                <tei:p xmlns="http://www.tei-c.org/ns/1.0" xml:lang="la">Redimor.</tei:p>
+              </emblem:transcription>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00049" page="76" xml:lang="de">
+                <tei:p xmlns="http://www.tei-c.org/ns/1.0" xml:lang="de">Ich werd errett.</tei:p>
+              </emblem:transcription>
+            </emblem:motto>
+            <emblem:pictura medium="engraving" xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00050"/>
+            <emblem:subscriptio>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00049" page="76" xml:lang="la"/>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00049" page="76" xml:lang="de"/>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00050" page="77" xml:lang="la"/>
+            </emblem:subscriptio>
+          </emblem:emblem>
+          <emblem:emblem globalID="http://hdl.handle.net/10111/EmblemRegistry:E004946">
+            <emblem:motto>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00051" page="88" xml:lang="la">
+                <tei:p xmlns="http://www.tei-c.org/ns/1.0" xml:lang="la">Mellifico.</tei:p>
+              </emblem:transcription>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00051" page="88" xml:lang="de">
+                <tei:p xmlns="http://www.tei-c.org/ns/1.0" xml:lang="de">Ich mach Honig.</tei:p>
+              </emblem:transcription>
+            </emblem:motto>
+            <emblem:pictura medium="engraving" xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00052"/>
+            <emblem:subscriptio>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00051" page="88" xml:lang="la"/>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00051" page="88" xml:lang="de"/>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00052" page="81" xml:lang="la"/>
+            </emblem:subscriptio>
+          </emblem:emblem>
+          <emblem:emblem globalID="http://hdl.handle.net/10111/EmblemRegistry:E004947">
+            <emblem:motto>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00053" page="84" xml:lang="la">
+                <tei:p xmlns="http://www.tei-c.org/ns/1.0" xml:lang="la">Nil Sum.</tei:p>
+              </emblem:transcription>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00053" page="84" xml:lang="de">
+                <tei:p xmlns="http://www.tei-c.org/ns/1.0" xml:lang="de">Ich taug nichts.</tei:p>
+              </emblem:transcription>
+            </emblem:motto>
+            <emblem:pictura medium="engraving" xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00054"/>
+            <emblem:subscriptio>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00053" page="84" xml:lang="la"/>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00053" page="84" xml:lang="de"/>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00054" page="85" xml:lang="la"/>
+            </emblem:subscriptio>
+          </emblem:emblem>
+          <emblem:emblem globalID="http://hdl.handle.net/10111/EmblemRegistry:E004948">
+            <emblem:motto>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00055" page="88" xml:lang="la">
+                <tei:p xmlns="http://www.tei-c.org/ns/1.0" xml:lang="la">Praepondero.</tei:p>
+              </emblem:transcription>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00055" page="88" xml:lang="de">
+                <tei:p xmlns="http://www.tei-c.org/ns/1.0" xml:lang="de">Ich vberweige.</tei:p>
+              </emblem:transcription>
+            </emblem:motto>
+            <emblem:pictura medium="engraving" xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00056"/>
+            <emblem:subscriptio>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00055" page="88" xml:lang="la"/>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00055" page="88" xml:lang="la"/>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00056" page="89" xml:lang="la"/>
+            </emblem:subscriptio>
+          </emblem:emblem>
+          <emblem:emblem globalID="http://hdl.handle.net/10111/EmblemRegistry:E004949">
+            <emblem:motto>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00057" page="92" xml:lang="la">
+                <tei:p xmlns="http://www.tei-c.org/ns/1.0" xml:lang="la">Superaedificor.</tei:p>
+              </emblem:transcription>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00057" page="92" xml:lang="de">
+                <tei:p xmlns="http://www.tei-c.org/ns/1.0" xml:lang="de">Ich werd auffgebawt.</tei:p>
+              </emblem:transcription>
+            </emblem:motto>
+            <emblem:pictura medium="engraving" xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00058"/>
+            <emblem:subscriptio>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00057" page="92" xml:lang="la"/>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00057" page="92" xml:lang="de"/>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00058" page="93" xml:lang="la"/>
+            </emblem:subscriptio>
+          </emblem:emblem>
+          <emblem:emblem globalID="http://hdl.handle.net/10111/EmblemRegistry:E004950">
+            <emblem:motto>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00059" page="96" xml:lang="la">
+                <tei:p xmlns="http://www.tei-c.org/ns/1.0" xml:lang="la">Absolvor.</tei:p>
+              </emblem:transcription>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00059" page="96" xml:lang="de">
+                <tei:p xmlns="http://www.tei-c.org/ns/1.0" xml:lang="de">Ich werde loß gesprochen.</tei:p>
+              </emblem:transcription>
+            </emblem:motto>
+            <emblem:pictura medium="engraving" xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00060"/>
+            <emblem:subscriptio>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00059" page="96" xml:lang="la"/>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00059" page="96" xml:lang="de"/>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00060" page="97" xml:lang="la"/>
+            </emblem:subscriptio>
+          </emblem:emblem>
+          <emblem:emblem globalID="http://hdl.handle.net/10111/EmblemRegistry:E004951">
+            <emblem:motto>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00061" page="100" xml:lang="la">
+                <tei:p xmlns="http://www.tei-c.org/ns/1.0" xml:lang="la">Non Laedor.S-la</tei:p>
+              </emblem:transcription>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00061" page="100" xml:lang="de">
+                <tei:p xmlns="http://www.tei-c.org/ns/1.0" xml:lang="de">Es schadt mir nichts.</tei:p>
+              </emblem:transcription>
+            </emblem:motto>
+            <emblem:pictura medium="engraving" xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00062"/>
+            <emblem:subscriptio>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00061" page="100" xml:lang="de"/>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00062" page="101" xml:lang="la"/>
+            </emblem:subscriptio>
+          </emblem:emblem>
+          <emblem:emblem globalID="http://hdl.handle.net/10111/EmblemRegistry:E004952">
+            <emblem:motto>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00063" page="104" xml:lang="la">
+                <tei:p xmlns="http://www.tei-c.org/ns/1.0" xml:lang="la">Praedestinor.</tei:p>
+              </emblem:transcription>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00063" page="104" xml:lang="de">
+                <tei:p xmlns="http://www.tei-c.org/ns/1.0" xml:lang="de">Ich werde zuvor vorsehen.</tei:p>
+              </emblem:transcription>
+            </emblem:motto>
+            <emblem:pictura medium="engraving" xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00064"/>
+            <emblem:subscriptio>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00063" page="104" xml:lang="de"/>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00064" page="103" xml:lang="la"/>
+            </emblem:subscriptio>
+          </emblem:emblem>
+          <emblem:emblem globalID="http://hdl.handle.net/10111/EmblemRegistry:E004953">
+            <emblem:motto>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00065" page="108" xml:lang="la">
+                <tei:p xmlns="http://www.tei-c.org/ns/1.0" xml:lang="la">Probor.</tei:p>
+              </emblem:transcription>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00065" page="108" xml:lang="de">
+                <tei:p xmlns="http://www.tei-c.org/ns/1.0" xml:lang="de">Ich werd probiert.</tei:p>
+              </emblem:transcription>
+            </emblem:motto>
+            <emblem:pictura medium="engraving" xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00066"/>
+            <emblem:subscriptio>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00065" page="108" xml:lang="la"/>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00065" page="108" xml:lang="de"/>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00066" page="109" xml:lang="la"/>
+            </emblem:subscriptio>
+          </emblem:emblem>
+          <emblem:emblem globalID="http://hdl.handle.net/10111/EmblemRegistry:E004954">
+            <emblem:motto>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00067" page="112" xml:lang="la">
+                <tei:p xmlns="http://www.tei-c.org/ns/1.0" xml:lang="la">Refrigeror.</tei:p>
+              </emblem:transcription>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00067" page="112" xml:lang="de">
+                <tei:p xmlns="http://www.tei-c.org/ns/1.0" xml:lang="de">Ich werde geküllt.</tei:p>
+              </emblem:transcription>
+            </emblem:motto>
+            <emblem:pictura medium="engraving" xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00068"/>
+            <emblem:subscriptio>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00067" page="112" xml:lang="la"/>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00067" page="112" xml:lang="la"/>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00068" page="113" xml:lang="la"/>
+            </emblem:subscriptio>
+          </emblem:emblem>
+          <emblem:emblem globalID="http://hdl.handle.net/10111/EmblemRegistry:E004955">
+            <emblem:motto>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00069" page="116" xml:lang="la">
+                <tei:p xmlns="http://www.tei-c.org/ns/1.0" xml:lang="la">Protegor.</tei:p>
+              </emblem:transcription>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00069" page="116" xml:lang="de">
+                <tei:p xmlns="http://www.tei-c.org/ns/1.0" xml:lang="de">Ich werd beschirmt.</tei:p>
+              </emblem:transcription>
+            </emblem:motto>
+            <emblem:pictura medium="engraving" xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00070"/>
+            <emblem:subscriptio>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00069" page="116" xml:lang="la"/>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00069" page="116" xml:lang="de"/>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00070" page="117" xml:lang="la"/>
+            </emblem:subscriptio>
+          </emblem:emblem>
+          <emblem:emblem globalID="http://hdl.handle.net/10111/EmblemRegistry:E004956">
+            <emblem:motto>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00071" page="120" xml:lang="la">
+                <tei:p xmlns="http://www.tei-c.org/ns/1.0" xml:lang="la">Sannas Fero.</tei:p>
+              </emblem:transcription>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00071" page="120" xml:lang="de">
+                <tei:p xmlns="http://www.tei-c.org/ns/1.0" xml:lang="de">Ich dulde Spott vnd Hohn.</tei:p>
+              </emblem:transcription>
+            </emblem:motto>
+            <emblem:pictura medium="engraving" xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00072"/>
+            <emblem:subscriptio>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00071" page="120" xml:lang="la"/>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00071" page="120" xml:lang="de"/>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00072" page="121" xml:lang="la"/>
+            </emblem:subscriptio>
+          </emblem:emblem>
+          <emblem:emblem globalID="http://hdl.handle.net/10111/EmblemRegistry:E004957">
+            <emblem:motto>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00073" page="124" xml:lang="la">
+                <tei:p xmlns="http://www.tei-c.org/ns/1.0" xml:lang="la">Fidelis Sum.</tei:p>
+              </emblem:transcription>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00073" page="124" xml:lang="de">
+                <tei:p xmlns="http://www.tei-c.org/ns/1.0" xml:lang="de">Ich bin getrew.</tei:p>
+              </emblem:transcription>
+            </emblem:motto>
+            <emblem:pictura medium="engraving" xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00074"/>
+            <emblem:subscriptio>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00073" page="124" xml:lang="la"/>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00073" page="124" xml:lang="de"/>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00074" page="125" xml:lang="la"/>
+            </emblem:subscriptio>
+          </emblem:emblem>
+          <emblem:emblem globalID="http://hdl.handle.net/10111/EmblemRegistry:E004958">
+            <emblem:motto>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00075" page="128" xml:lang="la">
+                <tei:p xmlns="http://www.tei-c.org/ns/1.0" xml:lang="la">Infernum Timeo.</tei:p>
+              </emblem:transcription>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00075" page="128" xml:lang="de">
+                <tei:p xmlns="http://www.tei-c.org/ns/1.0" xml:lang="de">Ich förcht die Hell.</tei:p>
+              </emblem:transcription>
+            </emblem:motto>
+            <emblem:pictura medium="engraving" xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00076"/>
+            <emblem:subscriptio>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00075" page="128" xml:lang="la"/>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00075" page="128" xml:lang="de"/>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00076" page="129" xml:lang="la"/>
+            </emblem:subscriptio>
+          </emblem:emblem>
+          <emblem:emblem globalID="http://hdl.handle.net/10111/EmblemRegistry:E004959">
+            <emblem:motto>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00077" page="132" xml:lang="la">
+                <tei:p xmlns="http://www.tei-c.org/ns/1.0" xml:lang="la">Refectionem Spero.</tei:p>
+              </emblem:transcription>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00077" page="132" xml:lang="de">
+                <tei:p xmlns="http://www.tei-c.org/ns/1.0" xml:lang="de">Ich hoff Erlabung.</tei:p>
+              </emblem:transcription>
+            </emblem:motto>
+            <emblem:pictura medium="engraving" xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00078"/>
+            <emblem:subscriptio>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00077" page="132" xml:lang="la"/>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00077" page="132" xml:lang="de"/>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00078" page="133" xml:lang="la"/>
+            </emblem:subscriptio>
+          </emblem:emblem>
+          <emblem:emblem globalID="http://hdl.handle.net/10111/EmblemRegistry:E004960">
+            <emblem:motto>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00079" page="136" xml:lang="la">
+                <tei:p xmlns="http://www.tei-c.org/ns/1.0" xml:lang="la">Qui Sitit, Bibet.</tei:p>
+              </emblem:transcription>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00079" page="136" xml:lang="de">
+                <tei:p xmlns="http://www.tei-c.org/ns/1.0" xml:lang="de">Der dürftige wird trincken.</tei:p>
+              </emblem:transcription>
+            </emblem:motto>
+            <emblem:pictura medium="engraving" xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00080"/>
+            <emblem:subscriptio>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00079" page="136" xml:lang="la"/>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00079" page="136" xml:lang="de"/>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00080" page="137" xml:lang="la"/>
+            </emblem:subscriptio>
+          </emblem:emblem>
+          <emblem:emblem globalID="http://hdl.handle.net/10111/EmblemRegistry:E004961">
+            <emblem:motto>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00081" page="140" xml:lang="la">
+                <tei:p xmlns="http://www.tei-c.org/ns/1.0" xml:lang="la">Limus, Fimus.</tei:p>
+              </emblem:transcription>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00081" page="140" xml:lang="de">
+                <tei:p xmlns="http://www.tei-c.org/ns/1.0" xml:lang="de">Du bist Erd vnd wirst Erde werden.</tei:p>
+              </emblem:transcription>
+            </emblem:motto>
+            <emblem:pictura medium="engraving" xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00082"/>
+            <emblem:subscriptio>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00081" page="140" xml:lang="la"/>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00081" page="140" xml:lang="de"/>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00082" page="141" xml:lang="la"/>
+            </emblem:subscriptio>
+          </emblem:emblem>
+          <emblem:emblem globalID="http://hdl.handle.net/10111/EmblemRegistry:E004962">
+            <emblem:motto>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00083" page="144" xml:lang="el">
+                <tei:p xmlns="http://www.tei-c.org/ns/1.0" xml:lang="el">[[greek]].</tei:p>
+              </emblem:transcription>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00083" page="144" xml:lang="de">
+                <tei:p xmlns="http://www.tei-c.org/ns/1.0" xml:lang="de">Kein Lahr ohn Gefahr.</tei:p>
+              </emblem:transcription>
+            </emblem:motto>
+            <emblem:pictura medium="engraving" xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00084"/>
+            <emblem:subscriptio>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00083" page="144" xml:lang="la"/>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00083" page="144" xml:lang="de"/>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00084" page="145" xml:lang="la"/>
+            </emblem:subscriptio>
+          </emblem:emblem>
+          <emblem:emblem globalID="http://hdl.handle.net/10111/EmblemRegistry:E004963">
+            <emblem:motto>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00085" page="148" xml:lang="la">
+                <tei:p xmlns="http://www.tei-c.org/ns/1.0" xml:lang="la">Nec Citra Nec Ultra.</tei:p>
+              </emblem:transcription>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00085" page="148" xml:lang="de">
+                <tei:p xmlns="http://www.tei-c.org/ns/1.0" xml:lang="de">Halts Mittel.</tei:p>
+              </emblem:transcription>
+            </emblem:motto>
+            <emblem:pictura medium="engraving" xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00086"/>
+            <emblem:subscriptio>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00085" page="148" xml:lang="la"/>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00085" page="148" xml:lang="de"/>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00086" page="149" xml:lang="la"/>
+            </emblem:subscriptio>
+          </emblem:emblem>
+          <emblem:emblem globalID="http://hdl.handle.net/10111/EmblemRegistry:E004964">
+            <emblem:motto>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00087" page="152" xml:lang="la">
+                <tei:p xmlns="http://www.tei-c.org/ns/1.0" xml:lang="la">Sapientia Simplex.</tei:p>
+              </emblem:transcription>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00087" page="152" xml:lang="de">
+                <tei:p xmlns="http://www.tei-c.org/ns/1.0" xml:lang="de">Einfältige Klugheit.</tei:p>
+              </emblem:transcription>
+            </emblem:motto>
+            <emblem:pictura medium="engraving" xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00088"/>
+            <emblem:subscriptio>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00087" page="152" xml:lang="la"/>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00087" page="152" xml:lang="de"/>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00088" page="153" xml:lang="la"/>
+            </emblem:subscriptio>
+          </emblem:emblem>
+          <emblem:emblem globalID="http://hdl.handle.net/10111/EmblemRegistry:E004965">
+            <emblem:motto>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00089" page="156" xml:lang="la">
+                <tei:p xmlns="http://www.tei-c.org/ns/1.0" xml:lang="la">O Vanitas!</tei:p>
+              </emblem:transcription>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00089" page="156" xml:lang="de">
+                <tei:p xmlns="http://www.tei-c.org/ns/1.0" xml:lang="de">O Eitelkeit!</tei:p>
+              </emblem:transcription>
+            </emblem:motto>
+            <emblem:pictura medium="engraving" xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00090"/>
+            <emblem:subscriptio>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00089" page="156" xml:lang="la"/>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00089" page="156" xml:lang="de"/>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00090" page="157" xml:lang="la"/>
+            </emblem:subscriptio>
+          </emblem:emblem>
+          <emblem:emblem globalID="http://hdl.handle.net/10111/EmblemRegistry:E004966">
+            <emblem:motto>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00091" page="160" xml:lang="la">
+                <tei:p xmlns="http://www.tei-c.org/ns/1.0" xml:lang="la">Emigrandum Est.</tei:p>
+              </emblem:transcription>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00091" page="160" xml:lang="de">
+                <tei:p xmlns="http://www.tei-c.org/ns/1.0" xml:lang="de">Es muß gewandert seyn.</tei:p>
+              </emblem:transcription>
+            </emblem:motto>
+            <emblem:pictura medium="engraving" xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00092"/>
+            <emblem:subscriptio>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00091" page="160" xml:lang="la"/>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00091" page="160" xml:lang="de"/>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00092" page="161" xml:lang="la"/>
+            </emblem:subscriptio>
+          </emblem:emblem>
+          <emblem:emblem globalID="http://hdl.handle.net/10111/EmblemRegistry:E004967">
+            <emblem:motto>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00093" page="164" xml:lang="la">
+                <tei:p xmlns="http://www.tei-c.org/ns/1.0" xml:lang="la">Suspiro.</tei:p>
+              </emblem:transcription>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00093" page="164" xml:lang="de">
+                <tei:p xmlns="http://www.tei-c.org/ns/1.0" xml:lang="de">Ich seufftze.</tei:p>
+              </emblem:transcription>
+            </emblem:motto>
+            <emblem:pictura medium="engraving" xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00094"/>
+            <emblem:subscriptio>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00093" page="164" xml:lang="la"/>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00093" page="164" xml:lang="de"/>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00094" page="165" xml:lang="la"/>
+            </emblem:subscriptio>
+          </emblem:emblem>
+          <emblem:emblem globalID="http://hdl.handle.net/10111/EmblemRegistry:E004968">
+            <emblem:motto>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00095" page="168" xml:lang="la">
+                <tei:p xmlns="http://www.tei-c.org/ns/1.0" xml:lang="la">Mors Lucrum.</tei:p>
+              </emblem:transcription>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00095" page="168" xml:lang="de">
+                <tei:p xmlns="http://www.tei-c.org/ns/1.0" xml:lang="de">Sterben mein Gewinn.</tei:p>
+              </emblem:transcription>
+            </emblem:motto>
+            <emblem:pictura medium="engraving" xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00096"/>
+            <emblem:subscriptio>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00095" page="168" xml:lang="la"/>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00095" page="168" xml:lang="de"/>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00096" page="169" xml:lang="la"/>
+            </emblem:subscriptio>
+          </emblem:emblem>
+          <emblem:emblem globalID="http://hdl.handle.net/10111/EmblemRegistry:E004969">
+            <emblem:motto>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00097" page="172" xml:lang="la">
+                <tei:p xmlns="http://www.tei-c.org/ns/1.0" xml:lang="la">Sic Alor.</tei:p>
+              </emblem:transcription>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00097" page="172" xml:lang="de">
+                <tei:p xmlns="http://www.tei-c.org/ns/1.0" xml:lang="de">So nehr ich mich.</tei:p>
+              </emblem:transcription>
+            </emblem:motto>
+            <emblem:pictura medium="engraving" xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00098"/>
+            <emblem:subscriptio>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00097" page="172" xml:lang="la"/>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00097" page="172" xml:lang="de"/>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00098" page="173" xml:lang="la"/>
+            </emblem:subscriptio>
+          </emblem:emblem>
+          <emblem:emblem globalID="http://hdl.handle.net/10111/EmblemRegistry:E004970">
+            <emblem:motto>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00099" page="176" xml:lang="la">
+                <tei:p xmlns="http://www.tei-c.org/ns/1.0" xml:lang="la">Sanor.</tei:p>
+              </emblem:transcription>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00099" page="176" xml:lang="de">
+                <tei:p xmlns="http://www.tei-c.org/ns/1.0" xml:lang="de">Ich werde gesundt gemacht.</tei:p>
+              </emblem:transcription>
+            </emblem:motto>
+            <emblem:pictura medium="engraving" xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00100"/>
+            <emblem:subscriptio>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00099" page="176" xml:lang="la"/>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00099" page="176" xml:lang="de"/>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00100" page="177" xml:lang="la"/>
+            </emblem:subscriptio>
+          </emblem:emblem>
+          <emblem:emblem globalID="http://hdl.handle.net/10111/EmblemRegistry:E004971">
+            <emblem:motto>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00101" page="180" xml:lang="la">
+                <tei:p xmlns="http://www.tei-c.org/ns/1.0" xml:lang="la">Alta Cadunt.</tei:p>
+              </emblem:transcription>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00101" page="180" xml:lang="de">
+                <tei:p xmlns="http://www.tei-c.org/ns/1.0" xml:lang="de">Was zu hoch ist/ fället.</tei:p>
+              </emblem:transcription>
+            </emblem:motto>
+            <emblem:pictura medium="engraving" xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00102"/>
+            <emblem:subscriptio>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00101" page="180" xml:lang="la"/>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00101" page="180" xml:lang="de"/>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00102" page="181" xml:lang="la"/>
+            </emblem:subscriptio>
+          </emblem:emblem>
+          <emblem:emblem globalID="http://hdl.handle.net/10111/EmblemRegistry:E004972">
+            <emblem:motto>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00103" page="184" xml:lang="la">
+                <tei:p xmlns="http://www.tei-c.org/ns/1.0" xml:lang="la">Per Angusta.</tei:p>
+              </emblem:transcription>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00103" page="184" xml:lang="de">
+                <tei:p xmlns="http://www.tei-c.org/ns/1.0" xml:lang="de">Durch Trübsal vnd Angst.</tei:p>
+              </emblem:transcription>
+            </emblem:motto>
+            <emblem:pictura medium="engraving" xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00104"/>
+            <emblem:subscriptio>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00103" page="184" xml:lang="la"/>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00103" page="184" xml:lang="de"/>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00104" page="185" xml:lang="la"/>
+            </emblem:subscriptio>
+          </emblem:emblem>
+          <emblem:emblem globalID="http://hdl.handle.net/10111/EmblemRegistry:E004973">
+            <emblem:motto>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00105" page="188" xml:lang="la">
+                <tei:p xmlns="http://www.tei-c.org/ns/1.0" xml:lang="la">Adsit Ab Alto.</tei:p>
+              </emblem:transcription>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00105" page="188" xml:lang="de">
+                <tei:p xmlns="http://www.tei-c.org/ns/1.0" xml:lang="de">Der Segen kompt von oben herab.</tei:p>
+              </emblem:transcription>
+            </emblem:motto>
+            <emblem:pictura medium="engraving" xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00106"/>
+            <emblem:subscriptio>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00105" page="188" xml:lang="la"/>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00105" page="188" xml:lang="de"/>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00106" page="189" xml:lang="la"/>
+            </emblem:subscriptio>
+          </emblem:emblem>
+          <emblem:emblem globalID="http://hdl.handle.net/10111/EmblemRegistry:E004974">
+            <emblem:motto>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00107" page="192" xml:lang="la">
+                <tei:p xmlns="http://www.tei-c.org/ns/1.0" xml:lang="la"> Emergo.</tei:p>
+              </emblem:transcription>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00107" page="192" xml:lang="de">
+                <tei:p xmlns="http://www.tei-c.org/ns/1.0" xml:lang="de">Ich kom wieder aus der Tieffen.</tei:p>
+              </emblem:transcription>
+            </emblem:motto>
+            <emblem:pictura medium="engraving" xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00108"/>
+            <emblem:subscriptio>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00107" page="192" xml:lang="la"/>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00107" page="192" xml:lang="de"/>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00108" page="193" xml:lang="la"/>
+            </emblem:subscriptio>
+          </emblem:emblem>
+          <emblem:emblem globalID="http://hdl.handle.net/10111/EmblemRegistry:E004975">
+            <emblem:motto>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00109" page="196" xml:lang="la">
+                <tei:p xmlns="http://www.tei-c.org/ns/1.0" xml:lang="la">Parturiunt.</tei:p>
+              </emblem:transcription>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00109" page="196" xml:lang="de">
+                <tei:p xmlns="http://www.tei-c.org/ns/1.0" xml:lang="de">Sie geben hervor.</tei:p>
+              </emblem:transcription>
+            </emblem:motto>
+            <emblem:pictura medium="engraving" xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00110"/>
+            <emblem:subscriptio>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00109" page="196" xml:lang="la"/>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00109" page="196" xml:lang="de"/>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00110" page="197" xml:lang="la"/>
+            </emblem:subscriptio>
+          </emblem:emblem>
+          <emblem:emblem globalID="http://hdl.handle.net/10111/EmblemRegistry:E004976">
+            <emblem:motto>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00111" page="200" xml:lang="la">
+                <tei:p xmlns="http://www.tei-c.org/ns/1.0" xml:lang="la">Vulneror.</tei:p>
+              </emblem:transcription>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00111" page="200" xml:lang="de">
+                <tei:p xmlns="http://www.tei-c.org/ns/1.0" xml:lang="de">Ich werde verwundet.</tei:p>
+              </emblem:transcription>
+            </emblem:motto>
+            <emblem:pictura medium="engraving" xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00112"/>
+            <emblem:subscriptio>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00111" page="200" xml:lang="la"/>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00111" page="200" xml:lang="de"/>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00112" page="201" xml:lang="la"/>
+            </emblem:subscriptio>
+          </emblem:emblem>
+          <emblem:emblem globalID="http://hdl.handle.net/10111/EmblemRegistry:E004977">
+            <emblem:motto>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00113" page="204" xml:lang="la">
+                <tei:p xmlns="http://www.tei-c.org/ns/1.0" xml:lang="la">Affligor.</tei:p>
+              </emblem:transcription>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00113" page="204" xml:lang="de">
+                <tei:p xmlns="http://www.tei-c.org/ns/1.0" xml:lang="de">Ich werde geängstiget.</tei:p>
+              </emblem:transcription>
+            </emblem:motto>
+            <emblem:pictura medium="engraving" xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00114"/>
+            <emblem:subscriptio>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00113" page="204" xml:lang="la"/>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00113" page="204" xml:lang="de"/>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00114" page="205" xml:lang="la"/>
+            </emblem:subscriptio>
+          </emblem:emblem>
+          <emblem:emblem globalID="http://hdl.handle.net/10111/EmblemRegistry:E004978">
+            <emblem:motto>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00115" page="208" xml:lang="la">
+                <tei:p xmlns="http://www.tei-c.org/ns/1.0" xml:lang="la">Circumspecté.</tei:p>
+              </emblem:transcription>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00115" page="208" xml:lang="de">
+                <tei:p xmlns="http://www.tei-c.org/ns/1.0" xml:lang="de">Vorsichtiglich.</tei:p>
+              </emblem:transcription>
+            </emblem:motto>
+            <emblem:pictura medium="engraving" xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00116"/>
+            <emblem:subscriptio>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00115" page="208" xml:lang="la"/>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00115" page="208" xml:lang="de"/>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00116" page="209" xml:lang="la"/>
+            </emblem:subscriptio>
+          </emblem:emblem>
+          <emblem:emblem globalID="http://hdl.handle.net/10111/EmblemRegistry:E004979">
+            <emblem:motto>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00117" page="212" xml:lang="la">
+                <tei:p xmlns="http://www.tei-c.org/ns/1.0" xml:lang="la">Memento Mori.</tei:p>
+              </emblem:transcription>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00117" page="212" xml:lang="de">
+                <tei:p xmlns="http://www.tei-c.org/ns/1.0" xml:lang="de">Bedenck das Ende.</tei:p>
+              </emblem:transcription>
+            </emblem:motto>
+            <emblem:pictura medium="engraving" xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00118"/>
+            <emblem:subscriptio>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00117" page="212" xml:lang="la"/>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00117" page="212" xml:lang="de"/>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00118" page="213" xml:lang="la"/>
+            </emblem:subscriptio>
+          </emblem:emblem>
+          <emblem:emblem globalID="http://hdl.handle.net/10111/EmblemRegistry:E004980">
+            <emblem:motto>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00126" page="126" xml:lang="la">
+                <tei:p xmlns="http://www.tei-c.org/ns/1.0" xml:lang="la">Coronor.</tei:p>
+              </emblem:transcription>
+            </emblem:motto>
+            <emblem:pictura medium="engraving" xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00126"/>
+            <emblem:subscriptio>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00126" page="126" xml:lang="la"/>
+            </emblem:subscriptio>
+          </emblem:emblem>
+          <emblem:emblem globalID="http://hdl.handle.net/10111/EmblemRegistry:E004981">
+            <emblem:motto>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00135" page="16" xml:lang="la">
+                <tei:p xmlns="http://www.tei-c.org/ns/1.0" xml:lang="la">Radicabor.</tei:p>
+              </emblem:transcription>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00135" page="16" xml:lang="de">
+                <tei:p xmlns="http://www.tei-c.org/ns/1.0" xml:lang="de">Ich werde eynwurtzeln.</tei:p>
+              </emblem:transcription>
+            </emblem:motto>
+            <emblem:pictura medium="engraving" xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00136"/>
+            <emblem:subscriptio>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00135" page="16" xml:lang="la"/>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00135" page="16" xml:lang="de"/>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00136" page="17" xml:lang="la"/>
+            </emblem:subscriptio>
+          </emblem:emblem>
+          <emblem:emblem globalID="http://hdl.handle.net/10111/EmblemRegistry:E004982">
+            <emblem:motto>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00137" page="20" xml:lang="la">
+                <tei:p xmlns="http://www.tei-c.org/ns/1.0" xml:lang="la">Confortabor.</tei:p>
+              </emblem:transcription>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00137" page="20" xml:lang="de">
+                <tei:p xmlns="http://www.tei-c.org/ns/1.0" xml:lang="de">Ich werde gestärckt werden.</tei:p>
+              </emblem:transcription>
+            </emblem:motto>
+            <emblem:pictura medium="engraving" xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00138"/>
+            <emblem:subscriptio>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00137" page="20" xml:lang="la"/>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00137" page="20" xml:lang="de"/>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00138" page="21" xml:lang="la"/>
+            </emblem:subscriptio>
+          </emblem:emblem>
+          <emblem:emblem globalID="http://hdl.handle.net/10111/EmblemRegistry:E004983">
+            <emblem:motto>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00139" page="24" xml:lang="la">
+                <tei:p xmlns="http://www.tei-c.org/ns/1.0" xml:lang="la">Pacis Amans.</tei:p>
+              </emblem:transcription>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00139" page="24" xml:lang="de">
+                <tei:p xmlns="http://www.tei-c.org/ns/1.0" xml:lang="de">Friedliebendt.</tei:p>
+              </emblem:transcription>
+            </emblem:motto>
+            <emblem:pictura medium="engraving" xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00140"/>
+            <emblem:subscriptio>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00139" page="24" xml:lang="la"/>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00139" page="24" xml:lang="de"/>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00140" page="25" xml:lang="la"/>
+            </emblem:subscriptio>
+          </emblem:emblem>
+          <emblem:emblem globalID="http://hdl.handle.net/10111/EmblemRegistry:E004984">
+            <emblem:motto>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00141" page="28" xml:lang="la">
+                <tei:p xmlns="http://www.tei-c.org/ns/1.0" xml:lang="la">Mitesco.</tei:p>
+              </emblem:transcription>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00141" page="28" xml:lang="de">
+                <tei:p xmlns="http://www.tei-c.org/ns/1.0" xml:lang="de">Ich werde sanfftmühtig.</tei:p>
+              </emblem:transcription>
+            </emblem:motto>
+            <emblem:pictura medium="engraving" xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00142"/>
+            <emblem:subscriptio>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00141" page="28" xml:lang="la"/>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00141" page="28" xml:lang="de"/>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00142" page="29" xml:lang="la"/>
+            </emblem:subscriptio>
+          </emblem:emblem>
+          <emblem:emblem globalID="http://hdl.handle.net/10111/EmblemRegistry:E004985">
+            <emblem:motto>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00143" page="32" xml:lang="la">
+                <tei:p xmlns="http://www.tei-c.org/ns/1.0" xml:lang="la">Caecutio.</tei:p>
+              </emblem:transcription>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00143" page="32" xml:lang="de">
+                <tei:p xmlns="http://www.tei-c.org/ns/1.0" xml:lang="de">Ich bin geblendt.</tei:p>
+              </emblem:transcription>
+            </emblem:motto>
+            <emblem:pictura medium="engraving" xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00144"/>
+            <emblem:subscriptio>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00143" page="32" xml:lang="la"/>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00143" page="32" xml:lang="de"/>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00144" page="33" xml:lang="la"/>
+            </emblem:subscriptio>
+          </emblem:emblem>
+          <emblem:emblem globalID="http://hdl.handle.net/10111/EmblemRegistry:E004986">
+            <emblem:motto>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00145" page="36" xml:lang="la">
+                <tei:p xmlns="http://www.tei-c.org/ns/1.0" xml:lang="la">Frangor.</tei:p>
+              </emblem:transcription>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00145" page="36" xml:lang="de">
+                <tei:p xmlns="http://www.tei-c.org/ns/1.0" xml:lang="de">Ich werde zerbrochen.</tei:p>
+              </emblem:transcription>
+            </emblem:motto>
+            <emblem:pictura medium="engraving" xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00146"/>
+            <emblem:subscriptio>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00145" page="36" xml:lang="la"/>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00145" page="36" xml:lang="de"/>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00146" page="37" xml:lang="la"/>
+            </emblem:subscriptio>
+          </emblem:emblem>
+          <emblem:emblem globalID="http://hdl.handle.net/10111/EmblemRegistry:E004987">
+            <emblem:motto>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00147" page="40" xml:lang="la">
+                <tei:p xmlns="http://www.tei-c.org/ns/1.0" xml:lang="la">Immolor.</tei:p>
+              </emblem:transcription>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00147" page="40" xml:lang="de">
+                <tei:p xmlns="http://www.tei-c.org/ns/1.0" xml:lang="de">Ich werde auffgeopffert.</tei:p>
+              </emblem:transcription>
+            </emblem:motto>
+            <emblem:pictura medium="engraving" xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00148"/>
+            <emblem:subscriptio>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00147" page="40" xml:lang="la"/>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00147" page="40" xml:lang="de"/>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00148" page="41" xml:lang="la"/>
+            </emblem:subscriptio>
+          </emblem:emblem>
+          <emblem:emblem globalID="http://hdl.handle.net/10111/EmblemRegistry:E004988">
+            <emblem:motto>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00149" page="44" xml:lang="la">
+                <tei:p xmlns="http://www.tei-c.org/ns/1.0" xml:lang="la">Suo Tempore.</tei:p>
+              </emblem:transcription>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00149" page="44" xml:lang="de">
+                <tei:p xmlns="http://www.tei-c.org/ns/1.0" xml:lang="de">Zu seiner Zeit.</tei:p>
+              </emblem:transcription>
+            </emblem:motto>
+            <emblem:pictura medium="engraving" xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00150"/>
+            <emblem:subscriptio>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00149" page="44" xml:lang="la"/>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00149" page="44" xml:lang="de"/>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00150" page="45" xml:lang="la"/>
+            </emblem:subscriptio>
+          </emblem:emblem>
+          <emblem:emblem globalID="http://hdl.handle.net/10111/EmblemRegistry:E004989">
+            <emblem:motto>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00151" page="48" xml:lang="la">
+                <tei:p xmlns="http://www.tei-c.org/ns/1.0" xml:lang="la">Mens Quo Vadis?</tei:p>
+              </emblem:transcription>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00151" page="48" xml:lang="de">
+                <tei:p xmlns="http://www.tei-c.org/ns/1.0" xml:lang="de">Hertz vnd Sinn/ wo da hinauß?</tei:p>
+              </emblem:transcription>
+            </emblem:motto>
+            <emblem:pictura medium="engraving" xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00152"/>
+            <emblem:subscriptio>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00151" page="48" xml:lang="la"/>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00151" page="48" xml:lang="de"/>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00152" page="49" xml:lang="la"/>
+            </emblem:subscriptio>
+          </emblem:emblem>
+          <emblem:emblem globalID="http://hdl.handle.net/10111/EmblemRegistry:E004990">
+            <emblem:motto>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00153" page="52" xml:lang="la">
+                <tei:p xmlns="http://www.tei-c.org/ns/1.0" xml:lang="la">Mors In Olla.</tei:p>
+              </emblem:transcription>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00153" page="52" xml:lang="de">
+                <tei:p xmlns="http://www.tei-c.org/ns/1.0" xml:lang="de">Der Todt im Töpffen.</tei:p>
+              </emblem:transcription>
+            </emblem:motto>
+            <emblem:pictura medium="engraving" xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00154"/>
+            <emblem:subscriptio>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00153" page="52" xml:lang="la"/>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00153" page="52" xml:lang="de"/>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00154" page="53" xml:lang="la"/>
+            </emblem:subscriptio>
+          </emblem:emblem>
+          <emblem:emblem globalID="http://hdl.handle.net/10111/EmblemRegistry:E004991">
+            <emblem:motto>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00155" page="56" xml:lang="la">
+                <tei:p xmlns="http://www.tei-c.org/ns/1.0" xml:lang="la">Ut Bibam.</tei:p>
+              </emblem:transcription>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00155" page="56" xml:lang="de">
+                <tei:p xmlns="http://www.tei-c.org/ns/1.0" xml:lang="de">Ich komm/ daß ich trincke.</tei:p>
+              </emblem:transcription>
+            </emblem:motto>
+            <emblem:pictura medium="engraving" xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00156"/>
+            <emblem:subscriptio>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00155" page="56" xml:lang="la"/>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00155" page="56" xml:lang="de"/>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00156" page="57" xml:lang="la"/>
+            </emblem:subscriptio>
+          </emblem:emblem>
+          <emblem:emblem globalID="http://hdl.handle.net/10111/EmblemRegistry:E004992">
+            <emblem:motto>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00157" page="60" xml:lang="la">
+                <tei:p xmlns="http://www.tei-c.org/ns/1.0" xml:lang="la">Mundabor.</tei:p>
+              </emblem:transcription>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00157" page="60" xml:lang="de">
+                <tei:p xmlns="http://www.tei-c.org/ns/1.0" xml:lang="de">Ich werde gereinigt werden. </tei:p>
+              </emblem:transcription>
+            </emblem:motto>
+            <emblem:pictura medium="engraving" xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00158"/>
+            <emblem:subscriptio>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00157" page="60" xml:lang="la"/>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00157" page="60" xml:lang="de"/>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00158" page="61" xml:lang="la"/>
+            </emblem:subscriptio>
+          </emblem:emblem>
+          <emblem:emblem globalID="http://hdl.handle.net/10111/EmblemRegistry:E004993">
+            <emblem:motto>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00159" page="64" xml:lang="la">
+                <tei:p xmlns="http://www.tei-c.org/ns/1.0" xml:lang="la">Praegravor.</tei:p>
+              </emblem:transcription>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00159" page="64" xml:lang="de">
+                <tei:p xmlns="http://www.tei-c.org/ns/1.0" xml:lang="de">Wie schwehr ist meine Last!</tei:p>
+              </emblem:transcription>
+            </emblem:motto>
+            <emblem:pictura medium="engraving" xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00160"/>
+            <emblem:subscriptio>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00159" page="64" xml:lang="la"/>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00159" page="64" xml:lang="de"/>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00160" page="65" xml:lang="la"/>
+            </emblem:subscriptio>
+          </emblem:emblem>
+          <emblem:emblem globalID="http://hdl.handle.net/10111/EmblemRegistry:E004994">
+            <emblem:motto>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00161" page="68" xml:lang="la">
+                <tei:p xmlns="http://www.tei-c.org/ns/1.0" xml:lang="la">Laetificor.</tei:p>
+              </emblem:transcription>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00161" page="68" xml:lang="de">
+                <tei:p xmlns="http://www.tei-c.org/ns/1.0" xml:lang="de">Ich werde erfrewet.</tei:p>
+              </emblem:transcription>
+            </emblem:motto>
+            <emblem:pictura medium="engraving" xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00162"/>
+            <emblem:subscriptio>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00161" page="68" xml:lang="la"/>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00161" page="68" xml:lang="de"/>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00162" page="69" xml:lang="la"/>
+            </emblem:subscriptio>
+          </emblem:emblem>
+          <emblem:emblem globalID="http://hdl.handle.net/10111/EmblemRegistry:E004995">
+            <emblem:motto>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00163" page="72" xml:lang="la">
+                <tei:p xmlns="http://www.tei-c.org/ns/1.0" xml:lang="la">Fidens Non Videns.</tei:p>
+              </emblem:transcription>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00163" page="72" xml:lang="de">
+                <tei:p xmlns="http://www.tei-c.org/ns/1.0" xml:lang="de">Glauben ohne sehen.</tei:p>
+              </emblem:transcription>
+            </emblem:motto>
+            <emblem:pictura medium="engraving" xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00164"/>
+            <emblem:subscriptio>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00163" page="72" xml:lang="la"/>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00163" page="72" xml:lang="de"/>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00164" page="73" xml:lang="la"/>
+            </emblem:subscriptio>
+          </emblem:emblem>
+          <emblem:emblem globalID="http://hdl.handle.net/10111/EmblemRegistry:E004996">
+            <emblem:motto>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00165" page="76" xml:lang="la">
+                <tei:p xmlns="http://www.tei-c.org/ns/1.0" xml:lang="la">Per Verbum.</tei:p>
+              </emblem:transcription>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00165" page="76" xml:lang="de">
+                <tei:p xmlns="http://www.tei-c.org/ns/1.0" xml:lang="de">Durchs Wort.</tei:p>
+              </emblem:transcription>
+            </emblem:motto>
+            <emblem:pictura medium="engraving" xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00166"/>
+            <emblem:subscriptio>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00165" page="76" xml:lang="la"/>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00165" page="76" xml:lang="de"/>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00166" page="77" xml:lang="la"/>
+            </emblem:subscriptio>
+          </emblem:emblem>
+          <emblem:emblem globalID="http://hdl.handle.net/10111/EmblemRegistry:E004997">
+            <emblem:motto>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00167" page="80" xml:lang="la">
+                <tei:p xmlns="http://www.tei-c.org/ns/1.0" xml:lang="la">Mutantur In Horas.</tei:p>
+              </emblem:transcription>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00167" page="80" xml:lang="de">
+                <tei:p xmlns="http://www.tei-c.org/ns/1.0" xml:lang="de">Verendern sich alle Stundt.</tei:p>
+              </emblem:transcription>
+            </emblem:motto>
+            <emblem:pictura medium="engraving" xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00168"/>
+            <emblem:subscriptio>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00167" page="80" xml:lang="la"/>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00167" page="80" xml:lang="de"/>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00168" page="81" xml:lang="la"/>
+            </emblem:subscriptio>
+          </emblem:emblem>
+          <emblem:emblem globalID="http://hdl.handle.net/10111/EmblemRegistry:E004998">
+            <emblem:motto>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00169" page="84" xml:lang="la">
+                <tei:p xmlns="http://www.tei-c.org/ns/1.0" xml:lang="la">Rapere Capere.</tei:p>
+              </emblem:transcription>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00169" page="84" xml:lang="de">
+                <tei:p xmlns="http://www.tei-c.org/ns/1.0" xml:lang="de">Reissen vnd Raffen. </tei:p>
+              </emblem:transcription>
+            </emblem:motto>
+            <emblem:pictura medium="engraving" xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00170"/>
+            <emblem:subscriptio>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00169" page="84" xml:lang="la"/>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00169" page="84" xml:lang="de"/>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00170" page="85" xml:lang="la"/>
+            </emblem:subscriptio>
+          </emblem:emblem>
+          <emblem:emblem globalID="http://hdl.handle.net/10111/EmblemRegistry:E004999">
+            <emblem:motto>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00171" page="88" xml:lang="la">
+                <tei:p xmlns="http://www.tei-c.org/ns/1.0" xml:lang="la">Fallimur.</tei:p>
+              </emblem:transcription>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00171" page="88" xml:lang="de">
+                <tei:p xmlns="http://www.tei-c.org/ns/1.0" xml:lang="de">So wirdt man betrogen.</tei:p>
+              </emblem:transcription>
+            </emblem:motto>
+            <emblem:pictura medium="engraving" xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00172"/>
+            <emblem:subscriptio>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00171" page="88" xml:lang="la"/>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00171" page="88" xml:lang="de"/>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00172" page="89" xml:lang="la"/>
+            </emblem:subscriptio>
+          </emblem:emblem>
+          <emblem:emblem globalID="http://hdl.handle.net/10111/EmblemRegistry:E005000">
+            <emblem:motto>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00173" page="92" xml:lang="la">
+                <tei:p xmlns="http://www.tei-c.org/ns/1.0" xml:lang="la">Perii, Quia Volui.</tei:p>
+              </emblem:transcription>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00173" page="92" xml:lang="de">
+                <tei:p xmlns="http://www.tei-c.org/ns/1.0" xml:lang="de">Meins Vnglücks Vrsach bin ich selbs.</tei:p>
+              </emblem:transcription>
+            </emblem:motto>
+            <emblem:pictura medium="engraving" xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00174"/>
+            <emblem:subscriptio>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00173" page="92" xml:lang="la"/>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00173" page="92" xml:lang="de"/>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00174" page="93" xml:lang="la"/>
+            </emblem:subscriptio>
+          </emblem:emblem>
+          <emblem:emblem globalID="http://hdl.handle.net/10111/EmblemRegistry:E005001">
+            <emblem:motto>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00175" page="96" xml:lang="la">
+                <tei:p xmlns="http://www.tei-c.org/ns/1.0" xml:lang="la">Vigilate.</tei:p>
+              </emblem:transcription>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00175" page="96" xml:lang="de">
+                <tei:p xmlns="http://www.tei-c.org/ns/1.0" xml:lang="de">Seyt wacker.</tei:p>
+              </emblem:transcription>
+            </emblem:motto>
+            <emblem:pictura medium="engraving" xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00176"/>
+            <emblem:subscriptio>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00175" page="96" xml:lang="la"/>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00175" page="96" xml:lang="de"/>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00176" page="97" xml:lang="la"/>
+            </emblem:subscriptio>
+          </emblem:emblem>
+          <emblem:emblem globalID="http://hdl.handle.net/10111/EmblemRegistry:E005002">
+            <emblem:motto>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00177" page="100" xml:lang="la">
+                <tei:p xmlns="http://www.tei-c.org/ns/1.0" xml:lang="la">Pro Forma.</tei:p>
+              </emblem:transcription>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00177" page="100" xml:lang="de">
+                <tei:p xmlns="http://www.tei-c.org/ns/1.0" xml:lang="de">Zum Schein.</tei:p>
+              </emblem:transcription>
+            </emblem:motto>
+            <emblem:pictura medium="engraving" xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00178"/>
+            <emblem:subscriptio>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00177" page="100" xml:lang="la"/>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00177" page="100" xml:lang="de"/>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00178" page="101" xml:lang="la"/>
+            </emblem:subscriptio>
+          </emblem:emblem>
+          <emblem:emblem globalID="http://hdl.handle.net/10111/EmblemRegistry:E005003">
+            <emblem:motto>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00179" page="104" xml:lang="la">
+                <tei:p xmlns="http://www.tei-c.org/ns/1.0" xml:lang="la">Te Sequar.</tei:p>
+              </emblem:transcription>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00179" page="104" xml:lang="de">
+                <tei:p xmlns="http://www.tei-c.org/ns/1.0" xml:lang="de">Dir will ich folgen. </tei:p>
+              </emblem:transcription>
+            </emblem:motto>
+            <emblem:pictura medium="engraving" xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00180"/>
+            <emblem:subscriptio>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00179" page="104" xml:lang="la"/>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00179" page="104" xml:lang="de"/>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00180" page="105" xml:lang="la"/>
+            </emblem:subscriptio>
+          </emblem:emblem>
+          <emblem:emblem globalID="http://hdl.handle.net/10111/EmblemRegistry:E005004">
+            <emblem:motto>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00181" page="108" xml:lang="la">
+                <tei:p xmlns="http://www.tei-c.org/ns/1.0" xml:lang="la">Laus In Charitate.</tei:p>
+              </emblem:transcription>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00181" page="108" xml:lang="de">
+                <tei:p xmlns="http://www.tei-c.org/ns/1.0" xml:lang="de">In Lieb sey Lob.</tei:p>
+              </emblem:transcription>
+            </emblem:motto>
+            <emblem:pictura medium="engraving" xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00182"/>
+            <emblem:subscriptio>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00181" page="108" xml:lang="la"/>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00181" page="108" xml:lang="de"/>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00182" page="109" xml:lang="la"/>
+            </emblem:subscriptio>
+          </emblem:emblem>
+          <emblem:emblem globalID="http://hdl.handle.net/10111/EmblemRegistry:E005005">
+            <emblem:motto>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00183" page="112" xml:lang="la">
+                <tei:p xmlns="http://www.tei-c.org/ns/1.0" xml:lang="la">Quid Lux Sub Modio?</tei:p>
+              </emblem:transcription>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00183" page="112" xml:lang="de">
+                <tei:p xmlns="http://www.tei-c.org/ns/1.0" xml:lang="de">Was soll das Liecht vnderm Scheffel?</tei:p>
+              </emblem:transcription>
+            </emblem:motto>
+            <emblem:pictura medium="engraving" xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00184"/>
+            <emblem:subscriptio>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00183" page="112" xml:lang="la"/>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00183" page="112" xml:lang="de"/>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00184" page="113" xml:lang="la"/>
+            </emblem:subscriptio>
+          </emblem:emblem>
+          <emblem:emblem globalID="http://hdl.handle.net/10111/EmblemRegistry:E005006">
+            <emblem:motto>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00185" page="116" xml:lang="la">
+                <tei:p xmlns="http://www.tei-c.org/ns/1.0" xml:lang="la">Subditi Estote.</tei:p>
+              </emblem:transcription>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00185" page="116" xml:lang="de">
+                <tei:p xmlns="http://www.tei-c.org/ns/1.0" xml:lang="de">Vndergebt euch.</tei:p>
+              </emblem:transcription>
+            </emblem:motto>
+            <emblem:pictura medium="engraving" xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00186"/>
+            <emblem:subscriptio>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00185" page="116" xml:lang="la"/>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00185" page="116" xml:lang="de"/>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00186" page="117" xml:lang="la"/>
+            </emblem:subscriptio>
+          </emblem:emblem>
+          <emblem:emblem globalID="http://hdl.handle.net/10111/EmblemRegistry:E005007">
+            <emblem:motto>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00187" page="120" xml:lang="la">
+                <tei:p xmlns="http://www.tei-c.org/ns/1.0" xml:lang="la"> Scrutamini Scripturas.</tei:p>
+              </emblem:transcription>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00187" page="120" xml:lang="de">
+                <tei:p xmlns="http://www.tei-c.org/ns/1.0" xml:lang="de">Forschet in der Schrifft.</tei:p>
+              </emblem:transcription>
+            </emblem:motto>
+            <emblem:pictura medium="engraving" xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00188"/>
+            <emblem:subscriptio>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00187" page="120" xml:lang="la"/>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00187" page="120" xml:lang="de"/>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00188" page="121" xml:lang="la"/>
+            </emblem:subscriptio>
+          </emblem:emblem>
+          <emblem:emblem globalID="http://hdl.handle.net/10111/EmblemRegistry:E005008">
+            <emblem:motto>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00189" page="124" xml:lang="la">
+                <tei:p xmlns="http://www.tei-c.org/ns/1.0" xml:lang="la">Charitas Omnia Superat.</tei:p>
+              </emblem:transcription>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00189" page="124" xml:lang="de">
+                <tei:p xmlns="http://www.tei-c.org/ns/1.0" xml:lang="de">Die Lieb verträgt alles.</tei:p>
+              </emblem:transcription>
+            </emblem:motto>
+            <emblem:pictura medium="engraving" xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00190"/>
+            <emblem:subscriptio>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00189" page="124" xml:lang="la"/>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00189" page="124" xml:lang="de"/>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00190" page="125" xml:lang="la"/>
+            </emblem:subscriptio>
+          </emblem:emblem>
+          <emblem:emblem globalID="http://hdl.handle.net/10111/EmblemRegistry:E005009">
+            <emblem:motto>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00191" page="128" xml:lang="la">
+                <tei:p xmlns="http://www.tei-c.org/ns/1.0" xml:lang="la">Redimor.</tei:p>
+              </emblem:transcription>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00191" page="128" xml:lang="de">
+                <tei:p xmlns="http://www.tei-c.org/ns/1.0" xml:lang="de">Ich werde erlöset.</tei:p>
+              </emblem:transcription>
+            </emblem:motto>
+            <emblem:pictura medium="engraving" xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00192"/>
+            <emblem:subscriptio>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00191" page="128" xml:lang="la"/>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00191" page="128" xml:lang="de"/>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00192" page="129" xml:lang="la"/>
+            </emblem:subscriptio>
+          </emblem:emblem>
+          <emblem:emblem globalID="http://hdl.handle.net/10111/EmblemRegistry:E005010">
+            <emblem:motto>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00193" page="132" xml:lang="la">
+                <tei:p xmlns="http://www.tei-c.org/ns/1.0" xml:lang="la">Sile, Spera.-</tei:p>
+              </emblem:transcription>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00193" page="132" xml:lang="de">
+                <tei:p xmlns="http://www.tei-c.org/ns/1.0" xml:lang="de">Sey still/ vnd hoffe.</tei:p>
+              </emblem:transcription>
+            </emblem:motto>
+            <emblem:pictura medium="engraving" xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00194"/>
+            <emblem:subscriptio>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00193" page="132" xml:lang="la"/>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00193" page="132" xml:lang="de"/>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00194" page="133" xml:lang="la"/>
+            </emblem:subscriptio>
+          </emblem:emblem>
+          <emblem:emblem globalID="http://hdl.handle.net/10111/EmblemRegistry:E005011">
+            <emblem:motto>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00195" page="136" xml:lang="la">
+                <tei:p xmlns="http://www.tei-c.org/ns/1.0" xml:lang="la">Ne Quid Nimis.</tei:p>
+              </emblem:transcription>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00195" page="136" xml:lang="de">
+                <tei:p xmlns="http://www.tei-c.org/ns/1.0" xml:lang="de">Thue nichts zu viel.</tei:p>
+              </emblem:transcription>
+            </emblem:motto>
+            <emblem:pictura medium="engraving" xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00196"/>
+            <emblem:subscriptio>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00195" page="136" xml:lang="la"/>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00195" page="136" xml:lang="de"/>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00196" page="137" xml:lang="la"/>
+            </emblem:subscriptio>
+          </emblem:emblem>
+          <emblem:emblem globalID="http://hdl.handle.net/10111/EmblemRegistry:E005012">
+            <emblem:motto>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00197" page="140" xml:lang="el">
+                <tei:p xmlns="http://www.tei-c.org/ns/1.0" xml:lang="el">[[greek]]</tei:p>
+              </emblem:transcription>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00197" page="140" xml:lang="la">
+                <tei:p xmlns="http://www.tei-c.org/ns/1.0" xml:lang="la">Fer, Sic Ferris.</tei:p>
+              </emblem:transcription>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00197" page="140" xml:lang="de">
+                <tei:p xmlns="http://www.tei-c.org/ns/1.0" xml:lang="de">Trage/ so wirstu getragen.</tei:p>
+              </emblem:transcription>
+            </emblem:motto>
+            <emblem:pictura medium="engraving" xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00198"/>
+            <emblem:subscriptio>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00197" page="140" xml:lang="la"/>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00197" page="140" xml:lang="de"/>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00198" page="141" xml:lang="la"/>
+            </emblem:subscriptio>
+          </emblem:emblem>
+          <emblem:emblem globalID="http://hdl.handle.net/10111/EmblemRegistry:E005013">
+            <emblem:motto>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00199" page="144" xml:lang="la">
+                <tei:p xmlns="http://www.tei-c.org/ns/1.0" xml:lang="la">Cum Timore Et Tremore</tei:p>
+              </emblem:transcription>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00199" page="144" xml:lang="de">
+                <tei:p xmlns="http://www.tei-c.org/ns/1.0" xml:lang="de">Mit Forcht vnd Zittern.</tei:p>
+              </emblem:transcription>
+            </emblem:motto>
+            <emblem:pictura medium="engraving" xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00200"/>
+            <emblem:subscriptio>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00199" page="144" xml:lang="la"/>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00199" page="144" xml:lang="de"/>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00200" page="145" xml:lang="la"/>
+            </emblem:subscriptio>
+          </emblem:emblem>
+          <emblem:emblem globalID="http://hdl.handle.net/10111/EmblemRegistry:E005014">
+            <emblem:motto>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00201" page="148" xml:lang="la">
+                <tei:p xmlns="http://www.tei-c.org/ns/1.0" xml:lang="la">Qui Perseveraverit.</tei:p>
+              </emblem:transcription>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00201" page="148" xml:lang="de">
+                <tei:p xmlns="http://www.tei-c.org/ns/1.0" xml:lang="de">Wer beharrt ans Endt.</tei:p>
+              </emblem:transcription>
+            </emblem:motto>
+            <emblem:pictura medium="engraving" xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00202"/>
+            <emblem:subscriptio>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00201" page="148" xml:lang="la"/>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00201" page="148" xml:lang="de"/>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00202" page="149" xml:lang="la"/>
+            </emblem:subscriptio>
+          </emblem:emblem>
+          <emblem:emblem globalID="http://hdl.handle.net/10111/EmblemRegistry:E005015">
+            <emblem:motto>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00203" page="152" xml:lang="la">
+                <tei:p xmlns="http://www.tei-c.org/ns/1.0" xml:lang="la">In Te Domine.</tei:p>
+              </emblem:transcription>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00203" page="152" xml:lang="de">
+                <tei:p xmlns="http://www.tei-c.org/ns/1.0" xml:lang="de">Auff dich/ O Herr!</tei:p>
+              </emblem:transcription>
+            </emblem:motto>
+            <emblem:pictura medium="engraving" xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00204"/>
+            <emblem:subscriptio>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00203" page="152" xml:lang="la"/>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00203" page="152" xml:lang="de"/>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00204" page="153" xml:lang="la"/>
+            </emblem:subscriptio>
+          </emblem:emblem>
+          <emblem:emblem globalID="http://hdl.handle.net/10111/EmblemRegistry:E005016">
+            <emblem:motto>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00205" page="156" xml:lang="la">
+                <tei:p xmlns="http://www.tei-c.org/ns/1.0" xml:lang="la">Non Simus Parvuli.</tei:p>
+              </emblem:transcription>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00205" page="156" xml:lang="de">
+                <tei:p xmlns="http://www.tei-c.org/ns/1.0" xml:lang="de">Lasset vns nicht kindisch seyn.</tei:p>
+              </emblem:transcription>
+            </emblem:motto>
+            <emblem:pictura medium="engraving" xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00206"/>
+            <emblem:subscriptio>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00205" page="156" xml:lang="la"/>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00205" page="156" xml:lang="de"/>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00206" page="157" xml:lang="la"/>
+            </emblem:subscriptio>
+          </emblem:emblem>
+          <emblem:emblem globalID="http://hdl.handle.net/10111/EmblemRegistry:E005017">
+            <emblem:motto>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00207" page="160" xml:lang="la">
+                <tei:p xmlns="http://www.tei-c.org/ns/1.0" xml:lang="la">Nec Tu Mihi, Nec Ego Tibi.</tei:p>
+              </emblem:transcription>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00207" page="160" xml:lang="de">
+                <tei:p xmlns="http://www.tei-c.org/ns/1.0" xml:lang="de">Weder ich dir/ noch du mir.</tei:p>
+              </emblem:transcription>
+            </emblem:motto>
+            <emblem:pictura medium="engraving" xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00208"/>
+            <emblem:subscriptio>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00207" page="160" xml:lang="la"/>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00207" page="160" xml:lang="de"/>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00208" page="161" xml:lang="la"/>
+            </emblem:subscriptio>
+          </emblem:emblem>
+          <emblem:emblem globalID="http://hdl.handle.net/10111/EmblemRegistry:E005018">
+            <emblem:motto>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00209" page="164" xml:lang="la">
+                <tei:p xmlns="http://www.tei-c.org/ns/1.0" xml:lang="la">Non Nisi Ad Unum.</tei:p>
+              </emblem:transcription>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00209" page="164" xml:lang="de">
+                <tei:p xmlns="http://www.tei-c.org/ns/1.0" xml:lang="de">Nach einem allein.</tei:p>
+              </emblem:transcription>
+            </emblem:motto>
+            <emblem:pictura medium="engraving" xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00210"/>
+            <emblem:subscriptio>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00209" page="164" xml:lang="la"/>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00209" page="164" xml:lang="de"/>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00210" page="165" xml:lang="la"/>
+            </emblem:subscriptio>
+          </emblem:emblem>
+          <emblem:emblem globalID="http://hdl.handle.net/10111/EmblemRegistry:E005019">
+            <emblem:motto>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00211" page="168" xml:lang="la">
+                <tei:p xmlns="http://www.tei-c.org/ns/1.0" xml:lang="la">Usque Ad Mortem.</tei:p>
+              </emblem:transcription>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00211" page="168" xml:lang="de">
+                <tei:p xmlns="http://www.tei-c.org/ns/1.0" xml:lang="de">Biß in den Todt.</tei:p>
+              </emblem:transcription>
+            </emblem:motto>
+            <emblem:pictura medium="engraving" xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00212"/>
+            <emblem:subscriptio>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00211" page="168" xml:lang="la"/>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00211" page="168" xml:lang="de"/>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00212" page="169" xml:lang="la"/>
+            </emblem:subscriptio>
+          </emblem:emblem>
+          <emblem:emblem globalID="http://hdl.handle.net/10111/EmblemRegistry:E005020">
+            <emblem:motto>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00213" page="172" xml:lang="la">
+                <tei:p xmlns="http://www.tei-c.org/ns/1.0" xml:lang="la">Cum Dixerint, Pax, Pax.</tei:p>
+              </emblem:transcription>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00213" page="172" xml:lang="de">
+                <tei:p xmlns="http://www.tei-c.org/ns/1.0" xml:lang="de">Wenn sie werden sagen/ Fried/ Fried.</tei:p>
+              </emblem:transcription>
+            </emblem:motto>
+            <emblem:pictura medium="engraving" xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00214"/>
+            <emblem:subscriptio>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00213" page="172" xml:lang="la"/>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00213" page="172" xml:lang="de"/>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00214" page="173" xml:lang="la"/>
+            </emblem:subscriptio>
+          </emblem:emblem>
+          <emblem:emblem globalID="http://hdl.handle.net/10111/EmblemRegistry:E005021">
+            <emblem:motto>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00215" page="176" xml:lang="la">
+                <tei:p xmlns="http://www.tei-c.org/ns/1.0" xml:lang="la">Non Tantum Nobis.</tei:p>
+              </emblem:transcription>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00215" page="176" xml:lang="de">
+                <tei:p xmlns="http://www.tei-c.org/ns/1.0" xml:lang="de">Vns nicht allein.</tei:p>
+              </emblem:transcription>
+            </emblem:motto>
+            <emblem:pictura medium="engraving" xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00216"/>
+            <emblem:subscriptio>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00215" page="176" xml:lang="la"/>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00215" page="176" xml:lang="de"/>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00216" page="177" xml:lang="la"/>
+            </emblem:subscriptio>
+          </emblem:emblem>
+          <emblem:emblem globalID="http://hdl.handle.net/10111/EmblemRegistry:E005022">
+            <emblem:motto>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00217" page="180" xml:lang="la">
+                <tei:p xmlns="http://www.tei-c.org/ns/1.0" xml:lang="la">Bona Conscientia.</tei:p>
+              </emblem:transcription>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00217" page="180" xml:lang="de">
+                <tei:p xmlns="http://www.tei-c.org/ns/1.0" xml:lang="de">Ein gut Gewissen.</tei:p>
+              </emblem:transcription>
+            </emblem:motto>
+            <emblem:pictura medium="engraving" xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00218"/>
+            <emblem:subscriptio>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00217" page="180" xml:lang="la"/>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00217" page="180" xml:lang="de"/>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00218" page="181" xml:lang="la"/>
+            </emblem:subscriptio>
+          </emblem:emblem>
+          <emblem:emblem globalID="http://hdl.handle.net/10111/EmblemRegistry:E005023">
+            <emblem:motto>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00219" page="184" xml:lang="la">
+                <tei:p xmlns="http://www.tei-c.org/ns/1.0" xml:lang="la">Sum In Vado.</tei:p>
+              </emblem:transcription>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00219" page="184" xml:lang="de">
+                <tei:p xmlns="http://www.tei-c.org/ns/1.0" xml:lang="de">Bin nun am sichern Furth.</tei:p>
+              </emblem:transcription>
+            </emblem:motto>
+            <emblem:pictura medium="engraving" xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00220"/>
+            <emblem:subscriptio>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00219" page="184" xml:lang="la"/>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00219" page="184" xml:lang="de"/>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00220" page="185" xml:lang="la"/>
+            </emblem:subscriptio>
+          </emblem:emblem>
+          <emblem:emblem globalID="http://hdl.handle.net/10111/EmblemRegistry:E005024">
+            <emblem:motto>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00221" page="188" xml:lang="el">
+                <tei:p xmlns="http://www.tei-c.org/ns/1.0" xml:lang="el">[[greek]]</tei:p>
+              </emblem:transcription>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00221" page="188" xml:lang="la">
+                <tei:p xmlns="http://www.tei-c.org/ns/1.0" xml:lang="la">Rursus Accendere.</tei:p>
+              </emblem:transcription>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00221" page="188" xml:lang="de">
+                <tei:p xmlns="http://www.tei-c.org/ns/1.0" xml:lang="de">Auffs new erwecken.</tei:p>
+              </emblem:transcription>
+            </emblem:motto>
+            <emblem:pictura medium="engraving" xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00222"/>
+            <emblem:subscriptio>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00221" page="188" xml:lang="la"/>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00221" page="188" xml:lang="de"/>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00222" page="189" xml:lang="la"/>
+            </emblem:subscriptio>
+          </emblem:emblem>
+          <emblem:emblem globalID="http://hdl.handle.net/10111/EmblemRegistry:E005025">
+            <emblem:motto>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00223" page="192" xml:lang="la">
+                <tei:p xmlns="http://www.tei-c.org/ns/1.0" xml:lang="la">Ad Utrumlibet.</tei:p>
+              </emblem:transcription>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00223" page="192" xml:lang="de">
+                <tei:p xmlns="http://www.tei-c.org/ns/1.0" xml:lang="de">Wie du wilt.</tei:p>
+              </emblem:transcription>
+            </emblem:motto>
+            <emblem:pictura medium="engraving" xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00224"/>
+            <emblem:subscriptio>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00223" page="192" xml:lang="la"/>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00223" page="192" xml:lang="de"/>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00224" page="193" xml:lang="la"/>
+            </emblem:subscriptio>
+          </emblem:emblem>
+          <emblem:emblem globalID="http://hdl.handle.net/10111/EmblemRegistry:E005026">
+            <emblem:motto>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00225" page="196" xml:lang="la">
+                <tei:p xmlns="http://www.tei-c.org/ns/1.0" xml:lang="la">Ex Fructibus.</tei:p>
+              </emblem:transcription>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00225" page="196" xml:lang="de">
+                <tei:p xmlns="http://www.tei-c.org/ns/1.0" xml:lang="de">Auß den Früchten.</tei:p>
+              </emblem:transcription>
+            </emblem:motto>
+            <emblem:pictura medium="engraving" xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00226"/>
+            <emblem:subscriptio>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00225" page="196" xml:lang="la"/>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00225" page="196" xml:lang="de"/>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00226" page="197" xml:lang="la"/>
+            </emblem:subscriptio>
+          </emblem:emblem>
+          <emblem:emblem globalID="http://hdl.handle.net/10111/EmblemRegistry:E005027">
+            <emblem:motto>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00227" page="200" xml:lang="el">
+                <tei:p xmlns="http://www.tei-c.org/ns/1.0" xml:lang="el">[[greek]]</tei:p>
+              </emblem:transcription>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00227" page="200" xml:lang="la">
+                <tei:p xmlns="http://www.tei-c.org/ns/1.0" xml:lang="la">Stulte Sapiens.</tei:p>
+              </emblem:transcription>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00227" page="200" xml:lang="de">
+                <tei:p xmlns="http://www.tei-c.org/ns/1.0" xml:lang="de">Närrische Weißheit.</tei:p>
+              </emblem:transcription>
+            </emblem:motto>
+            <emblem:pictura medium="engraving" xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00228"/>
+            <emblem:subscriptio>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00227" page="200" xml:lang="la"/>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00227" page="200" xml:lang="de"/>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00228" page="201" xml:lang="la"/>
+            </emblem:subscriptio>
+          </emblem:emblem>
+          <emblem:emblem globalID="http://hdl.handle.net/10111/EmblemRegistry:E005028">
+            <emblem:motto>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00229" page="204" xml:lang="la">
+                <tei:p xmlns="http://www.tei-c.org/ns/1.0" xml:lang="la">Domine, Ut Videam.</tei:p>
+              </emblem:transcription>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00229" page="204" xml:lang="de">
+                <tei:p xmlns="http://www.tei-c.org/ns/1.0" xml:lang="de">Herr/ daß ich sehe.</tei:p>
+              </emblem:transcription>
+            </emblem:motto>
+            <emblem:pictura medium="engraving" xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00230"/>
+            <emblem:subscriptio>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00229" page="204" xml:lang="la"/>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00229" page="204" xml:lang="de"/>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00230" page="205" xml:lang="la"/>
+            </emblem:subscriptio>
+          </emblem:emblem>
+          <emblem:emblem globalID="http://hdl.handle.net/10111/EmblemRegistry:E005029">
+            <emblem:motto>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00231" page="208" xml:lang="la">
+                <tei:p xmlns="http://www.tei-c.org/ns/1.0" xml:lang="la">Morieris.</tei:p>
+              </emblem:transcription>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00231" page="208" xml:lang="de">
+                <tei:p xmlns="http://www.tei-c.org/ns/1.0" xml:lang="de">Du wirst sterben.</tei:p>
+              </emblem:transcription>
+            </emblem:motto>
+            <emblem:pictura medium="engraving" xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00232"/>
+            <emblem:subscriptio>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00231" page="208" xml:lang="la"/>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00231" page="208" xml:lang="de"/>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00232" page="209" xml:lang="la"/>
+            </emblem:subscriptio>
+          </emblem:emblem>
+          <emblem:emblem globalID="http://hdl.handle.net/10111/EmblemRegistry:E005030">
+            <emblem:motto>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00233" page="212" xml:lang="la">
+                <tei:p xmlns="http://www.tei-c.org/ns/1.0" xml:lang="la">Ne Peream, Pereant.</tei:p>
+              </emblem:transcription>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00233" page="212" xml:lang="de">
+                <tei:p xmlns="http://www.tei-c.org/ns/1.0" xml:lang="de">Ehe dann ich verderbe/ gehe all mein Gut zu Grunde.</tei:p>
+              </emblem:transcription>
+            </emblem:motto>
+            <emblem:pictura medium="engraving" xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00234"/>
+            <emblem:subscriptio>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00233" page="212" xml:lang="la"/>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00233" page="212" xml:lang="de"/>
+              <emblem:transcription xlink:href="http://diglib.hab.de/drucke/th-470/start.htm?image=00234" page="213" xml:lang="la"/>
+            </emblem:subscriptio>
+          </emblem:emblem>
+        </emblem:biblioDesc>
+      </metadata>
+    </record>
+  </GetRecord>
+</OAI-PMH>

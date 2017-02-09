@@ -1,0 +1,101 @@
+# Emblem Schema Light
+#
+# Author:    David Maus <maus@hab.de>
+# Timestamp: <2017-02-02 06:58:34 dmaus>
+#
+# A simplified variant of the Emblem Schema, based on the Emblem
+# Schema v1.2 and developed as part of the Wolfenbüttel emblem2rdf
+# pipeline.
+#
+# Copyright (c) 2016 by David Maus <maus@hab.de>
+#
+
+default namespace = "http://diglib.hab.de/rules/schema/emblem"
+
+namespace tei = "http://www.tei-c.org/ns/1.0"
+namespace xlink = "http://www.w3.org/1999/xlink"
+namespace skos = "http://www.w3.org/2004/02/skos/core#"
+namespace emblem = "http://diglib.hab.de/rules/schema/emblem"
+
+# Extensionpoints start
+
+foreignBibliographicDescription = empty
+foreignContentRepresentation = empty
+
+picturaMediaList = "drawing" | "engraving" | "etching" | "other" | "painting" | "woodcut"
+
+# Extension points end
+
+attribute.link =
+   attribute xlink:href { xsd:anyURI }?,
+   attribute page { xsd:token }?
+
+attribute.globalID = attribute globalID { xsd:anyURI }?
+
+attribute.lang = attribute xml:lang { xsd:language }?
+
+biblioDesc = element biblioDesc {
+   biblioDesc.attributes,
+   biblioDesc.content
+}
+biblioDesc.attributes = empty
+biblioDesc.content =
+   foreignBibliographicDescription,
+   emblem*
+
+emblem = element emblem {
+   emblem.attributes,
+   emblem.content
+}
+emblem.attributes = attribute.globalID
+emblem.content =
+   motto+,
+   pictura*,
+   subscriptio*
+
+motto = element motto {
+   motto.attributes,
+   motto.content
+}
+motto.attributes = attribute.globalID
+motto.content = transcription*
+
+pictura = element pictura {
+   pictura.attributes,
+   pictura.content
+}
+pictura.attributes =
+   attribute.globalID,
+   attribute.link,
+   attribute medium { picturaMediaList }?
+
+pictura.content = iconclass*
+
+iconclass = element iconclass {
+   element skos:notation { text },
+   element skos:prefLabel {
+      attribute xml:lang { xsd:language }?
+   }*,
+   element keyword {
+      attribute xml:lang { xsd:language },
+      text
+   }
+}
+
+subscriptio = element subscriptio {
+   subscriptio.attributes,
+   subscriptio.content
+}
+subscriptio.attributes =
+   attribute.globalID
+subscriptio.content =
+   transcription*
+
+transcription = element transcription {
+   transcription.attributes,
+   transcription.content
+}
+transcription.attributes =
+   attribute.link,
+   attribute.lang
+transcription.content = foreignContentRepresentation?

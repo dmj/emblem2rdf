@@ -1,0 +1,21 @@
+# Prepare the TEI schema for inclusion.
+
+namespace tei = "http://www.tei-c.org/ns/1.0"
+
+include "foreign/teisimple.rnc" {
+   # Otherwise I get
+   #
+   # foreign/mods-3-6.rnc:604:3: error: conflicting ID-types for
+   # attribute "id" from namespace
+   # "http://www.w3.org/XML/1998/namespace" of element "rhyme"
+   # from namespace "http://www.tei-c.org/ns/1.0"
+   #
+   # Cf. RelaxNG Book?
+   att.global.attribute.xmlid = attribute xml:id { text }?
+   # Dto.? Redefine macro.anyXML
+   macro.anyXML =
+      element * - (tei:* | egXML) {
+         attribute * - ID { text }*,
+         (text | macro.anyXML)*
+      }
+}

@@ -1,0 +1,21 @@
+namespace tei = "http://www.tei-c.org/ns/1.0"
+
+include "core.rnc" {
+   foreignBibliographicDescription |= grammar {
+      include "foreign/mods-3-6.rnc" {
+         start = mods
+      }
+   }
+   foreignBibliographicDescription |= grammar {
+      include "default-teisimple.rnc" {
+         start = teiHeader
+      }
+   }
+   foreignContentRepresentation |= grammar {
+      include "default-teisimple.rnc" {
+         start = p
+      }
+   }
+}
+
+start = biblioDesc
