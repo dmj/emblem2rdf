@@ -15,8 +15,8 @@
   <p:input  port="source" primary="true" sequence="true"/>
   <p:output port="result" primary="true" sequence="true"/>
 
-  <p:option name="errors"  required="false" select="false()"/>
-  <p:option name="emblems" required="false" select="false()"/>
+  <p:option name="errors"  required="false" select="''"/>
+  <p:option name="emblems" required="false" select="''"/>
 
   <p:declare-step type="e:validate-skip">
     <p:documentation>
@@ -25,7 +25,7 @@
     <p:input  port="source" primary="true" sequence="true"/>
     <p:output port="result" primary="true" sequence="true"/>
 
-    <p:option name="errors" required="false" select="false()"/>
+    <p:option name="errors" required="false" select="''"/>
 
     <p:viewport match="emblem:emblem">
 
@@ -47,7 +47,7 @@
       </p:try>
 
       <p:choose>
-        <p:when test="($errors != false()) and /c:errors">
+        <p:when test="($errors != '') and /c:errors">
           <p:store method="xml">
             <p:with-option name="href" select="$errors"/>
           </p:store>
@@ -193,7 +193,7 @@
   </e:emblembook-metadata>
 
   <p:choose>
-    <p:when test="$emblems = true()">
+    <p:when test="$emblems != ''">
       <e:store-emblem-instances>
         <p:with-option name="targetBaseDir" select="$emblems"/>
         <p:input port="source">
