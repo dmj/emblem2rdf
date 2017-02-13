@@ -1,7 +1,7 @@
 # Emblem Schema Light
 #
 # Author:    David Maus <maus@hab.de>
-# Timestamp: <2017-02-02 06:58:34 dmaus>
+# Timestamp: <2017-02-13 09:54:47 dmaus>
 #
 # A simplified variant of the Emblem Schema, based on the Emblem
 # Schema v1.2 and developed as part of the Wolfenbüttel emblem2rdf
@@ -79,7 +79,7 @@ iconclass = element iconclass {
    element keyword {
       attribute xml:lang { xsd:language },
       text
-   }
+   }*
 }
 
 subscriptio = element subscriptio {
