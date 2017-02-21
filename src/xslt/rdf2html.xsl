@@ -1,52 +1,86 @@
 <xsl:transform version="2.0"
                exclude-result-prefixes="#all"
                xpath-default-namespace="http://uri.hab.de/ontology/emblem#"
-               xmlns:fun="http://dmaus.name/ns/xslt"
+               xmlns:cnt="http://www.w3.org/2011/content#"
                xmlns:dct="http://purl.org/dc/terms/"
-               xmlns:bibo="http://purl.org/ontology/bibo/"
+               xmlns:eg="http://dmaus.name/ns/egxml"
                xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
                xmlns:skos="http://www.w3.org/2004/02/skos/core#"
-               xmlns:xsd="http://www.w3.org/2001/XMLSchema"
                xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 
-  <xsl:output method="html" encoding="utf-8" indent="yes"
-              doctype-system="http://www.w3.org/TR/html4/strict.dtd"
-              doctype-public="-//W3C//DTD HTML 4.01//EN"/>
+  <xsl:include href="egxml/egxml.xsl"/>
 
-  <xsl:template match="/rdf:RDF">
+  <xsl:output method="html" encoding="utf-8" indent="yes"/>
+
+  <xsl:template match="Emblem">
     <html>
       <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-        <title><xsl:value-of select="Emblem/skos:prefLabel[1]"/></title>
+        <title><xsl:value-of select="skos:prefLabel"/></title>
+        <style type="text/css">
+          samp { display: block; }
+        </style>
       </head>
       <body>
-        <xsl:apply-templates/>
+        <table>
+          <caption><xsl:value-of select="skos:prefLabel"/></caption>
+          <tbody>
+            <xsl:for-each select="hasPart/Motto">
+              <tr>
+                <th colspan="2">Motto</th>
+              </tr>
+              <xsl:call-template name="segments"/>
+            </xsl:for-each>
+            <xsl:for-each select="hasPart/Subscriptio">
+              <tr>
+                <th colspan="2">Subscriptio</th>
+              </tr>
+              <xsl:call-template name="segments"/>
+            </xsl:for-each>
+            <xsl:for-each select="hasPart/Pictura">
+              <tr>
+                <th colspan="2">Pictura</th>
+              </tr>
+              <tr>
+                <td></td>
+                <td>
+                  <xsl:if test="isShownAt">
+                    <a hreF="{isShownAt/@rdf:resource}">
+                      <xsl:value-of select="isShownAt/@rdf:resource"/>
+                    </a>
+                  </xsl:if>
+                </td>
+              </tr>
+            </xsl:for-each>
+          </tbody>
+        </table>
       </body>
     </html>
   </xsl:template>
 
-  <xsl:template match="Motto | Subscriptio | Pictura">
-    <div>
-      <span>
-        <xsl:value-of select="local-name()"/>
-      </span>
-      <xsl:apply-templates/>
-    </div>
+  <xsl:template name="segments">
+    <xsl:for-each select="hasTextSegment/TextSegment">
+      <tr>
+        <td>
+          <xsl:value-of select="dct:language"/>
+        </td>
+        <td>
+          <xsl:if test="isShownAt">
+            <a hreF="{isShownAt/@rdf:resource}">
+              <xsl:value-of select="isShownAt/@rdf:resource"/>
+            </a>
+          </xsl:if>
+          <xsl:apply-templates select="dct:hasFormat/*"/>
+        </td>
+      </tr>
+    </xsl:for-each>
   </xsl:template>
 
-  <xsl:template match="TextSegment">
-    <div>
-      <xsl:if test="dct:language">
-        <span lang="{dct:language}">
-          <xsl:value-of select="dct:language"/>
-        </span>
-      </xsl:if>
-      <xsl:if test="isShownAt/@rdf:resource">
-        <a href="{isShownAt/@rdf:resource}">
-          <xsl:value-of select="isShownAt/@rdf:resource"/>
-        </a>
-      </xsl:if>
-    </div>
+  <xsl:template match="cnt:ContentAsXML">
+    <samp title="{dct:format}">
+      <xsl:copy-of select="eg:example(cnt:rest/*)"/>
+    </samp>
   </xsl:template>
+
+  <xsl:template match="text()"/>
 
 </xsl:transform>

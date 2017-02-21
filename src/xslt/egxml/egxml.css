@@ -1,0 +1,6 @@
+.egxml-element { display: block; }
+.egxml-comment { display: block; }
+.egxml-pi { display: block; }
+.egxml-element .egxml-element { margin-left: 1em; }
+.egxml-element .egxml-pi { margin-left: 1em; }
+.egxml-element .egxml-comment { margin-left: 1em; }
