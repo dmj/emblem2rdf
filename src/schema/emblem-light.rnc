@@ -1,5 +1,0 @@
-
-include "emblem-light/src/default.rnc" {
-   start = emblem
-}
-
