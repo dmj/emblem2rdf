@@ -2,6 +2,7 @@
                 xmlns:emblem="http://diglib.hab.de/rules/schema/emblem"
                 xmlns:embrdf="http://uri.hab.de/ontology/emblem#"
                 xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+                xmlns:cx="http://xmlcalabash.com/ns/extensions"
                 xmlns:c="http://www.w3.org/ns/xproc-step"
                 xmlns:e="http://emblem2rdf.org/ns/xproc"
                 xmlns:h="http://www.w3.org/1999/xhtml"
@@ -17,6 +18,59 @@
 
   <p:option name="errors"  required="false" select="''"/>
   <p:option name="emblems" required="false" select="''"/>
+
+  <p:import href="http://xmlcalabash.com/extension/steps/library-1.0.xpl"/>
+
+  <p:declare-step type="e:validate-skip">
+    <p:documentation>
+      Validate emblem descriptions and remove those that are invalid.
+    </p:documentation>
+    <p:input  port="source" primary="true" sequence="true"/>
+    <p:output port="result" primary="true" sequence="true"/>
+    <p:option name="errors" required="false" select="''"/>
+
+    <p:viewport match="emblem:biblioDesc">
+      <p:variable name="recordId" select="emblem:biblioDesc/*:mods/*:recordInfo/*:recordIdentifier"/>
+      <p:try name="validate">
+        <p:group>
+          <p:validate-with-xml-schema assert-valid="true">
+            <p:input port="schema">
+              <p:document href="../schema/emblem/emblem-1-3.xsd"/>
+            </p:input>
+          </p:validate-with-xml-schema>
+        </p:group>
+        <p:catch name="catch">
+          <p:identity>
+            <p:input port="source">
+              <p:pipe step="catch" port="error"/>
+            </p:input>
+          </p:identity>
+        </p:catch>
+      </p:try>
+
+     <p:choose>
+       <p:when test="($errors != '') and /c:errors">
+         <cx:message>
+           <p:with-option name="message" select="concat('Validation error PPN ', $recordId)"/>
+         </cx:message>
+         <p:store method="xml">
+           <p:with-option name="href" select="concat($errors, '.', $recordId)"/>
+         </p:store>
+         <p:identity>
+           <p:input port="source">
+             <p:inline>
+               <skip/>
+             </p:inline>
+           </p:input>
+         </p:identity>
+       </p:when>
+       <p:otherwise>
+         <p:identity/>
+       </p:otherwise>
+     </p:choose>
+    </p:viewport>
+
+  </p:declare-step>
 
   <p:declare-step type="e:transform-emblems">
     <p:documentation>
@@ -121,9 +175,16 @@
 
   </p:declare-step>
 
-  <e:transform-emblems name="transform-emblems">
+  <e:validate-skip name="validate-source">
+    <p:with-option name="errors" select="$errors"/>
     <p:input port="source">
       <p:pipe step="emblem2rdf" port="source"/>
+    </p:input>
+  </e:validate-skip>
+
+  <e:transform-emblems name="transform-emblems">
+    <p:input port="source">
+      <p:pipe step="validate-source" port="result"/>
     </p:input>
   </e:transform-emblems>
 
