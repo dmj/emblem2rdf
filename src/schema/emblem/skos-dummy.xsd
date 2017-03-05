@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema 
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" 
+    targetNamespace="http://www.w3.org/2004/02/skos/core#"
+     elementFormDefault="qualified" 
+     attributeFormDefault="qualified">
+    
+    <xs:import namespace="http://www.w3.org/XML/1998/namespace" schemaLocation="http://www.w3.org/2001/xml.xsd"/>
+    
+    <xs:element name="notation"/>
+    <xs:element name="prefLabel">
+        <xs:complexType mixed="true">
+            <xs:attribute ref="xml:id" use="optional"/>
+            <xs:attribute ref="xml:lang" use="optional"/>
+        </xs:complexType>
+    </xs:element>
+  </xs:schema>
