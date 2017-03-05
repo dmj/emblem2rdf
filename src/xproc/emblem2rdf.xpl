@@ -18,58 +18,6 @@
   <p:option name="errors"  required="false" select="''"/>
   <p:option name="emblems" required="false" select="''"/>
 
-  <p:declare-step type="e:validate-skip">
-    <p:documentation>
-      Validate input documents and remove all emblems with invalid or unsupported features.
-    </p:documentation>
-    <p:input  port="source" primary="true" sequence="true"/>
-    <p:output port="result" primary="true" sequence="true"/>
-
-    <p:option name="errors" required="false" select="''"/>
-
-    <p:viewport match="emblem:emblem">
-
-      <p:try>
-        <p:group>
-          <p:validate-with-relax-ng>
-            <p:input port="schema">
-              <p:data href="../schema/emblem-light.rnc"/>
-            </p:input>
-          </p:validate-with-relax-ng>
-        </p:group>
-        <p:catch name="catch">
-          <p:identity>
-            <p:input port="source">
-              <p:pipe step="catch" port="error"/>
-            </p:input>
-          </p:identity>
-        </p:catch>
-      </p:try>
-
-      <p:choose>
-        <p:when test="($errors != '') and /c:errors">
-          <p:store method="xml">
-            <p:with-option name="href" select="$errors"/>
-          </p:store>
-          <p:identity>
-            <p:input port="source">
-              <p:inline>
-                <e:skip/>
-              </p:inline>
-            </p:input>
-          </p:identity>
-        </p:when>
-        <p:otherwise>
-          <p:identity/>
-        </p:otherwise>
-      </p:choose>
-
-    </p:viewport>
-
-    <p:delete match="e:skip"/>
-
-  </p:declare-step>
-
   <p:declare-step type="e:transform-emblems">
     <p:documentation>
       Replace all emblem descriptions with the corresponding RDF/XML serialization.
@@ -173,16 +121,9 @@
 
   </p:declare-step>
 
-  <e:validate-skip name="validate-input">
-    <p:with-option name="errors" select="$errors"/>
-    <p:input port="source">
-      <p:pipe step="emblem2rdf" port="source"/>
-    </p:input>
-  </e:validate-skip>
-
   <e:transform-emblems name="transform-emblems">
     <p:input port="source">
-      <p:pipe step="validate-input" port="result"/>
+      <p:pipe step="emblem2rdf" port="source"/>
     </p:input>
   </e:transform-emblems>
 
