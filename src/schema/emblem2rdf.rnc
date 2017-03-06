@@ -1,7 +1,7 @@
 # RelaxNG schema for normalized RDF/XML emblem data
 #
 # Author: David Maus <maus@hab.de>
-# Timestamp: <2016-12-24 11:53:12 dmaus>
+# Timestamp: <2017-03-03 12:01:24 maus>
 #
 
 namespace emblem = "http://uri.hab.de/ontology/emblem#"
@@ -67,9 +67,9 @@ Pictura =
          element skos:Concept {
             model.rdf.subject,
             element skos:prefLabel {
-               attribute xml:lang { "de" },
+               attribute xml:lang { xsd:language }?,
                text
-            }
+            }+
          }
       },
       element dct:subject {
