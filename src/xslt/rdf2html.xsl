@@ -10,75 +10,56 @@
 
   <xsl:include href="egxml/egxml.xsl"/>
 
-  <xsl:output method="html" encoding="utf-8" indent="yes"/>
-
   <xsl:template match="Emblem">
     <html>
       <head>
-        <title><xsl:value-of select="skos:prefLabel"/></title>
-        <style type="text/css">
-          samp { display: block; }
-        </style>
+        <title><xsl:value-of select="skos:prefLabel[1]"/></title>
+        <link rel="stylesheet" href="../emblem.css"/>
       </head>
       <body>
-        <table>
-          <caption><xsl:value-of select="skos:prefLabel"/></caption>
-          <tbody>
-            <xsl:for-each select="hasPart/Motto">
-              <tr>
-                <th colspan="2">Motto</th>
-              </tr>
-              <xsl:call-template name="segments"/>
-            </xsl:for-each>
-            <xsl:for-each select="hasPart/Subscriptio">
-              <tr>
-                <th colspan="2">Subscriptio</th>
-              </tr>
-              <xsl:call-template name="segments"/>
-            </xsl:for-each>
-            <xsl:for-each select="hasPart/Pictura">
-              <tr>
-                <th colspan="2">Pictura</th>
-              </tr>
-              <tr>
-                <td></td>
-                <td>
-                  <xsl:if test="isShownAt">
-                    <a hreF="{isShownAt/@rdf:resource}">
-                      <xsl:value-of select="isShownAt/@rdf:resource"/>
-                    </a>
-                  </xsl:if>
-                </td>
-              </tr>
-            </xsl:for-each>
-          </tbody>
-        </table>
+        <h1><xsl:value-of select="skos:prefLabel[1]"/></h1>
+        <xsl:apply-templates select="hasPart/Motto | hasPart/Subscriptio"/>
+        <xsl:apply-templates select="hasPart/Pictura"/>
       </body>
     </html>
   </xsl:template>
 
-  <xsl:template name="segments">
-    <xsl:for-each select="hasTextSegment/TextSegment">
-      <tr>
-        <td>
-          <xsl:value-of select="dct:language"/>
-        </td>
-        <td>
-          <xsl:if test="isShownAt">
-            <a hreF="{isShownAt/@rdf:resource}">
-              <xsl:value-of select="isShownAt/@rdf:resource"/>
-            </a>
-          </xsl:if>
-          <xsl:apply-templates select="dct:hasFormat/*"/>
-        </td>
-      </tr>
-    </xsl:for-each>
+  <xsl:template match="Motto | Subscriptio">
+    <div class="entity">
+      <h2><xsl:value-of select="local-name()"/></h2>
+      <xsl:for-each-group select="*" group-by="name()">
+        <div class="property">
+          <span class="label"><xsl:value-of select="local-name()"/></span>
+          <span class="value">
+            <xsl:apply-templates select="current-group()"/>
+          </span>
+        </div>
+      </xsl:for-each-group>
+    </div>
   </xsl:template>
 
-  <xsl:template match="cnt:ContentAsXML">
-    <samp title="{dct:format}">
-      <xsl:copy-of select="eg:example(cnt:rest/*)"/>
-    </samp>
+  <xsl:template match="Pictura">
+    <div class="entity">
+      <h2>Pictura</h2>
+      <xsl:for-each-group select="*" group-by="name()">
+        <div class="property">
+          <span class="label"><xsl:value-of select="local-name()"/></span>
+          <span class="value">
+            <xsl:apply-templates select="current-group()"/>
+          </span>
+        </div>
+      </xsl:for-each-group>
+    </div>
+  </xsl:template>
+
+  <xsl:template match="skos:Concept">
+    <span>
+      <xsl:value-of select="if (skos:notation) then skos:notation else skos:prefLabel" separator=" / "/>
+    </span>
+  </xsl:template>
+
+  <xsl:template match="isShownAt | isShownBy">
+    <a href="{@rdf:resource}"><xsl:value-of select="@rdf:resource"/></a>
   </xsl:template>
 
   <xsl:template match="text()"/>
