@@ -62,6 +62,7 @@
           <dct:medium>
             <skos:Concept rdf:about="http://vocab.getty.edu/aat/300041340">
               <skos:prefLabel xml:lang="de">Stich (Gravur)</skos:prefLabel>
+              <skos:prefLabel xml:lang="en">Engraving</skos:prefLabel>
             </skos:Concept>
           </dct:medium>   
         </xsl:if>
@@ -128,8 +129,8 @@
       <xsl:text> </xsl:text>
       <xsl:if test="$emblem/motto/transcription/tei:p">
         <xsl:variable name="tokens" select="tokenize(($emblem/motto/transcription/tei:p)[1], '[:,-.]')"/>
-        <xsl:value-of select="normalize-space($tokens[1])"/>
-        <xsl:if test="count($tokens) &gt; 1">
+        <xsl:value-of select="normalize-space($tokens[1])" separator=" "/>
+        <xsl:if test="count($tokens) &gt; 5">
           <xsl:text>…</xsl:text>
         </xsl:if>
       </xsl:if>
