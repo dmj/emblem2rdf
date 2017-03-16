@@ -15,7 +15,7 @@
     </dct:BibliographicResource>
   </xsl:template>
 
-  <xsl:template match="mods/titleInfo">
+  <xsl:template match="mods/titleInfo[not(preceding-sibling::titleInfo)]">
     <dct:title>
       <xsl:value-of select="(nonSort, title)" separator=" "/>
       <xsl:if test="subTitle">
