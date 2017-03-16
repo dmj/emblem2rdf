@@ -83,6 +83,9 @@
     <p:output port="result" primary="true" sequence="true"/>
 
     <p:viewport match="emblem:emblem">
+      <cx:message>
+        <p:with-option name="message" select="emblem:emblem/@globalID"/>
+      </cx:message>
       <p:xslt>
         <p:input port="stylesheet">
           <p:document href="../xslt/emblem2rdf.xsl"/>
