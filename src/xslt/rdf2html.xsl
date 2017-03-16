@@ -18,6 +18,10 @@
       </head>
       <body>
         <h1><xsl:value-of select="skos:prefLabel[1]"/></h1>
+        <div class="property">
+          <span class="label">PURL</span>
+          <span class="value"><a href="{@rdf:about}"><xsl:value-of select="@rdf:about"/></a></span>
+        </div>
         <xsl:apply-templates select="hasPart/Motto | hasPart/Subscriptio"/>
         <xsl:apply-templates select="hasPart/Pictura"/>
       </body>
@@ -60,6 +64,46 @@
 
   <xsl:template match="isShownAt | isShownBy">
     <a href="{@rdf:resource}"><xsl:value-of select="@rdf:resource"/></a>
+  </xsl:template>
+
+  <xsl:template match="TextSegment">
+    <div class="entity">
+      <xsl:for-each-group select="*" group-by="name()">
+        <div class="property">
+          <span class="label"><xsl:value-of select="local-name()"/></span>
+          <span class="value">
+            <xsl:apply-templates select="current-group()"/>
+          </span>
+        </div>
+      </xsl:for-each-group>
+    </div>
+  </xsl:template>
+
+  <xsl:template match="cnt:ContentAsXml">
+    <xsl:call-template name="entity"/>
+  </xsl:template>
+
+  <xsl:template match="dct:language">
+    <xsl:value-of select="."/>
+  </xsl:template>
+
+  <xsl:template match="cnt:rest[@rdf:parseType = 'Literal']">
+    <samp>
+      <xsl:copy-of select="eg:example(*)"/>
+    </samp>
+  </xsl:template>
+
+  <xsl:template name="entity">
+    <div class="entity">
+      <xsl:for-each-group select="*" group-by="name()">
+        <div class="property">
+          <span class="label"><xsl:value-of select="local-name()"/></span>
+          <span class="value">
+            <xsl:apply-templates select="current-group()"/>
+          </span>
+        </div>
+      </xsl:for-each-group>
+    </div>
   </xsl:template>
 
   <xsl:template match="text()"/>
