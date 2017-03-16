@@ -15,7 +15,12 @@
 
   <xsl:template match="Emblem[@rdf:about]">
     <rdf:Description rdf:about="{@rdf:about}">
-      <xsl:copy-of select="skos:prefLabel"/>
+      <xsl:for-each select="skos:prefLabel">
+        <xsl:copy>
+          <xsl:copy-of select="@*"/>
+          <xsl:value-of select="concat('Emblem ', .)"/>
+        </xsl:copy>
+      </xsl:for-each>
       <xsl:for-each select=".//skos:notation[@rdf:datatype = 'http://uri.hab.de/ontology/diglib-types#Iconclass']">
         <dct:subject rdf:datatype="http://uri.hab.de/ontology/diglib-types#Iconclass"><xsl:value-of select="."/></dct:subject>
       </xsl:for-each>
