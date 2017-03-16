@@ -15,6 +15,9 @@
 
   <p:input  port="source" primary="true" sequence="true"/>
   <p:output port="result" primary="true" sequence="true"/>
+  <p:output port="beacon" sequence="false">
+    <p:pipe step="make-beacon" port="result"/>
+  </p:output>
 
   <p:option name="errors"  required="false" select="''"/>
   <p:option name="emblems" required="false" select="''"/>
@@ -213,6 +216,18 @@
       <p:pipe step="emblembook-metadata" port="result"/>
     </p:input>
   </p:wrap-sequence>
+
+  <p:xslt name="make-beacon">
+    <p:input port="source">
+      <p:pipe step="wrap-emblems" port="result"/>
+    </p:input>
+    <p:input port="stylesheet">
+      <p:document href="../xslt/beacon.xsl"/>
+    </p:input>
+    <p:input port="parameters">
+      <p:empty/>
+    </p:input>
+  </p:xslt>
 
   <p:identity>
     <p:input port="source">
