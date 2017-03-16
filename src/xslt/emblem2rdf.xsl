@@ -120,7 +120,7 @@
     </xsl:copy>
   </xsl:template>
 
-  <xsl:function name="emblem:label" as="element()">
+  <xsl:function name="emblem:label" as="element(skos:prefLabel)">
     <xsl:param name="emblem" as="element()"/>
     <skos:prefLabel>
       <xsl:if test="starts-with($emblem/@globalID, 'http://hdl.handle.net/10111/EmblemRegistry:')">
@@ -128,9 +128,9 @@
       </xsl:if>
       <xsl:text> </xsl:text>
       <xsl:if test="$emblem/motto/transcription/tei:p">
-        <xsl:variable name="tokens" select="tokenize(($emblem/motto/transcription/tei:p)[1], '[:,-.]')"/>
-        <xsl:value-of select="normalize-space($tokens[1])" separator=" "/>
-        <xsl:if test="count($tokens) &gt; 5">
+        <xsl:variable name="tokens" select="tokenize(($emblem/motto/transcription/tei:p)[1], '[:,.]')"/>
+        <xsl:value-of select="normalize-space($tokens[1])"/>
+        <xsl:if test="$tokens[2] != ''">
           <xsl:text>…</xsl:text>
         </xsl:if>
       </xsl:if>
