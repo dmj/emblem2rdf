@@ -3,6 +3,7 @@
                xmlns:dct="http://purl.org/dc/terms/"
                xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
                xmlns:foaf="http://xmlns.com/foaf/0.1/"
+               xmlns:marcrel="http://id.loc.gov/vocabulary/relators/"
                xmlns:skos="http://www.w3.org/2004/02/skos/core#"
                xmlns:xsd="http://www.w3.org/2001/XMLSchema"
                xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
@@ -39,6 +40,15 @@
 
   <xsl:template match="dateIssued">
     <dct:issued><xsl:value-of select="."/></dct:issued>
+  </xsl:template>
+
+  <xsl:template match="name[@type = 'personal'][role/roleTerm[@authority = 'marcrelator' and @type = 'code']]">
+    <xsl:element name="marcrel:{role/roleTerm[@authority = 'marcrelator' and @type = 'code']}">
+      <dct:Agent>
+        <xsl:if test="@valueURI"><xsl:attribute name="rdf:about" select="@valueURI"/></xsl:if>
+        <skos:prefLabel><xsl:value-of select="displayForm"/></skos:prefLabel>
+      </dct:Agent>
+    </xsl:element>
   </xsl:template>
 
   <xsl:template match="recordInfo/recordIdentifier[@source = 'DE-23']">
