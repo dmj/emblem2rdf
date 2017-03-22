@@ -125,7 +125,7 @@
         </p:input>
       </p:xslt>
 
-      <p:insert position="last-child" match="embrdf:Emblem">
+      <p:insert position="last-child" match="embrdf:Emblem" name="insert">
         <p:input port="source">
           <p:pipe step="iterate-emblembooks" port="current"/>
         </p:input>
@@ -133,6 +133,18 @@
           <p:pipe step="emblembook" port="result"/>
         </p:input>
       </p:insert>
+
+      <p:xslt>
+        <p:input port="source">
+          <p:pipe step="insert" port="result"/>
+        </p:input>
+        <p:input port="stylesheet">
+          <p:document href="../xslt/pushdown.xsl"/>
+        </p:input>
+        <p:input port="parameters">
+          <p:empty/>
+        </p:input>
+      </p:xslt>
 
     </p:viewport>
 
