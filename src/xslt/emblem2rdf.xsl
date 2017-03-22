@@ -4,6 +4,7 @@
                xmlns:cnt="http://www.w3.org/2011/content#"
                xmlns:dct="http://purl.org/dc/terms/"
                xmlns:emblem="http://uri.hab.de/ontology/emblem#"
+               xmlns:owl="http://www.w3.org/2002/07/owl#"
                xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
                xmlns:skos="http://www.w3.org/2004/02/skos/core#"
                xmlns:tei="http://www.tei-c.org/ns/1.0"
@@ -60,7 +61,8 @@
         
         <xsl:if test="@medium = 'engraving'">
           <dct:medium>
-            <skos:Concept rdf:about="http://vocab.getty.edu/aat/300041340">
+            <skos:Concept>
+              <owl:sameAs rdf:resource="http://vocab.getty.edu/aat/300041340"/>
               <skos:prefLabel xml:lang="de">Stich (Gravur)</skos:prefLabel>
               <skos:prefLabel xml:lang="en">Engraving</skos:prefLabel>
             </skos:Concept>
@@ -68,7 +70,8 @@
         </xsl:if>
         <xsl:for-each select="iconclass">
           <dct:subject>
-            <skos:Concept rdf:about="http://iconclass.org/{encode-for-uri(skos:notation)}">
+            <skos:Concept>
+              <owl:sameAs rdf:resource="http://iconclass.org/{encode-for-uri(skos:notation)}"/>
               <skos:notation rdf:datatype="http://uri.hab.de/ontology/diglib-types#Iconclass">
                 <xsl:value-of select="skos:notation"/>
               </skos:notation>
