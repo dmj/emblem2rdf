@@ -1,7 +1,6 @@
 <xsl:transform version="2.0"
                xmlns:emblem="http://diglib.hab.de/rules/schema/emblem"
                xmlns:dct="http://purl.org/dc/terms/"
-               xmlns:bibo="http://purl.org/ontology/bibo/"
                xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
                xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 
