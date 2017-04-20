@@ -51,7 +51,7 @@
         <xsl:if test="@valueURI">
           <owl:sameAs rdf:resource="{@valueURI}"/>
         </xsl:if>
-        <skos:prefLabel><xsl:value-of select="displayForm"/></skos:prefLabel>
+        <foaf:name><xsl:value-of select="displayForm"/></foaf:name>
       </dct:Agent>
     </xsl:element>
   </xsl:template>
