@@ -1,17 +1,17 @@
 # RelaxNG schema for normalized RDF/XML emblem data
 #
 # Author: David Maus <maus@hab.de>
-# Timestamp: <2017-03-03 12:01:24 maus>
+# Timestamp: <2017-03-22 13:26:28 maus>
 #
 
 namespace emblem = "http://uri.hab.de/ontology/emblem#"
 
-namespace bibo = "http://purl.org/ontology/bibo/"
 namespace skos = "http://www.w3.org/2004/02/skos/core#"
 
 namespace rdf = "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
 namespace dct = "http://purl.org/dc/terms/"
 namespace cnt = "http://www.w3.org/2011/content#"
+namespace owl = "http://www.w3.org/2002/07/owl#"
 
 start = Emblem | RDFWrapper
 
@@ -65,7 +65,7 @@ Pictura =
       model.emblem.webresource,
       element dct:medium {
          element skos:Concept {
-            model.rdf.subject,
+            model.owl.sameAs,
             element skos:prefLabel {
                attribute xml:lang { xsd:language }?,
                text
@@ -74,7 +74,7 @@ Pictura =
       },
       element dct:subject {
          element skos:Concept {
-            model.rdf.subject,
+            model.owl.sameAs,
             element skos:notation {
                attribute rdf:datatype { xsd:anyURI }?,
                text
@@ -120,6 +120,12 @@ model.emblem.webresource =
 
 model.rdf.subject =
    attribute rdf:about { xsd:anyURI }?
+
+model.owl.sameAs =
+   element owl:sameAs {
+      attribute rdf:resource { xsd:anyURI },
+      empty
+   }?
 
 model.dct.language =
    element dct:language {
