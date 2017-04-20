@@ -134,18 +134,6 @@
         </p:input>
       </p:insert>
 
-      <p:xslt>
-        <p:input port="source">
-          <p:pipe step="insert" port="result"/>
-        </p:input>
-        <p:input port="stylesheet">
-          <p:document href="../xslt/pushdown.xsl"/>
-        </p:input>
-        <p:input port="parameters">
-          <p:empty/>
-        </p:input>
-      </p:xslt>
-
     </p:viewport>
 
   </p:declare-step>
