@@ -14,10 +14,12 @@
     <html>
       <head>
         <title><xsl:value-of select="skos:prefLabel[1]"/></title>
+        <link rel="alternate"  href="{substring(@rdf:about, 44)}.rdf" type="application/rdf+xml"/>
         <link rel="stylesheet" href="../emblem.css"/>
       </head>
       <body>
         <h1><xsl:value-of select="skos:prefLabel[1]"/></h1>
+        <small><a href="{substring(@rdf:about, 44)}.rdf">RDF/XML</a></small>
         <div class="property">
           <span class="label">PURL</span>
           <span class="value"><a href="{@rdf:about}"><xsl:value-of select="@rdf:about"/></a></span>
