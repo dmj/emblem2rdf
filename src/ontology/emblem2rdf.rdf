@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet href="html.xsl" type="text/xsl"?>
 <rdf:RDF xml:base="http://uri.hab.de/ontology/emblem"
          xmlns:dct="http://purl.org/dc/terms/"
          xmlns:foaf="http://xmlns.com/foaf/0.1/"
@@ -6,7 +7,7 @@
          xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
          xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
 
-  <rdf:Description rdf:about="">
+  <rdf:Description rdf:about="http://uri.hab.de/ontology/emblem">
     <dct:title xml:lang="en">Wolfenbüttel Core Emblem Ontology</dct:title>
     <dct:creator>
       <foaf:Person>
@@ -26,9 +27,23 @@
         <foaf:mbox rdf:resource="mailto:staecker@hab.de"/>
       </foaf:Person>
     </dct:creator>
+    <rdfs:seeAlso rdf:parseType="Resource">
+      <foaf:homepage rdf:resource="http://diglib.hab.de?link=016"/>
+      <dct:title>Project "Linked Open Emblem Data" (2015-2017)</dct:title>
+    </rdfs:seeAlso>
+    <rdfs:seeAlso rdf:parseType="Resource">
+      <foaf:homepage rdf:resource="http://diglib.hab.de/rules/schema/emblem"/>
+      <dct:title>Emblem Schema Namespace Document</dct:title>
+    </rdfs:seeAlso>
+    <rdfs:seeAlso rdf:parseType="Resource">
+      <foaf:homepage rdf:resource="http://dx.doi.org/10.1108/LHT-11-2016-0126"/>
+      <dct:title>
+        Cole, Timothy W., Myung-Ja K. Han, Maria Janina Sarol, Monika Biel, and David Maus. “Using Linked Open Data to Enhance the Discoverability, Functionality &amp; Impact of Emblematica Online.” Library Hi Tech 35, no. 1 (January 31, 2017)
+      </dct:title>
+    </rdfs:seeAlso>
   </rdf:Description>
 
-  <rdfs:Class rdf:about="#Emblem">
+  <rdfs:Class rdf:about="http://uri.hab.de/ontology/emblem#Emblem">
     <rdfs:label>Emblem</rdfs:label>
     <rdfs:comment xml:lang="de">
       Das Emblem oder Sinnbild (ca. 1531-1750) ist eine bimediale Gattung, die in einem Zusammenspiel von Wort und Bild
@@ -50,12 +65,12 @@
     </rdfs:comment>
   </rdfs:Class>
 
-  <rdfs:Class rdf:about="#EmblemPart"/>
-  <rdfs:Class rdf:about="#EmblemTextPart">
+  <rdfs:Class rdf:about="http://uri.hab.de/ontology/emblem#EmblemPart"/>
+  <rdfs:Class rdf:about="http://uri.hab.de/ontology/emblem#EmblemTextPart">
     <rdfs:subClassOf rdf:resource="#EmblemPart"/>
   </rdfs:Class>
 
-  <rdfs:Class rdf:about="#Motto">
+  <rdfs:Class rdf:about="http://uri.hab.de/ontology/emblem#Motto">
     <rdfs:subClassOf rdf:resource="#EmblemTextPart"/>
     <rdfs:label>Motto</rdfs:label>
     <rdfs:comment xml:lang="de">
@@ -66,7 +81,7 @@
     </rdfs:comment>
   </rdfs:Class>
 
-  <rdfs:Class rdf:about="#Subscriptio">
+  <rdfs:Class rdf:about="http://uri.hab.de/ontology/emblem#Subscriptio">
     <rdfs:subClassOf rdf:resource="#EmblemTextPart"/>
     <rdfs:label>Subscriptio</rdfs:label>
     <rdfs:comment xml:lang="de">
@@ -78,7 +93,7 @@
     </rdfs:comment>
   </rdfs:Class>
 
-  <rdfs:Class rdf:about="#Pictura">
+  <rdfs:Class rdf:about="http://uri.hab.de/ontology/emblem#Pictura">
     <rdfs:subClassOf rdf:resource="#EmblemPart"/>
     <rdfs:label>Pictura</rdfs:label>
     <rdfs:comment xml:lang="de">
@@ -92,25 +107,25 @@
     </rdfs:comment>
   </rdfs:Class>
 
-  <rdfs:Class rdf:about="#TextSegment"/>
+  <rdfs:Class rdf:about="http://uri.hab.de/ontology/emblem#TextSegment"/>
 
-  <rdfs:Property rdf:about="#hasPart">
+  <rdfs:Property rdf:about="http://uri.hab.de/ontology/emblem#hasPart">
     <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/hasPart"/>
     <rdfs:range rdf:resource="#EmblemPart"/>
     <rdfs:domain rdf:resource="#Emblem"/>
   </rdfs:Property>
 
-  <rdf:Property rdf:about="#hasTextSegment">
+  <rdf:Property rdf:about="http://uri.hab.de/ontology/emblem#hasTextSegment">
     <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/hasPart"/>
     <rdfs:domain rdf:resource="#EmblemTextPart"/>
     <rdfs:range rdf:resource="#TextSegment"/>
   </rdf:Property>
 
-  <rdfs:Property rdf:about="#isShownBy">
+  <rdfs:Property rdf:about="http://uri.hab.de/ontology/emblem#isShownBy">
     <rdfs:seeAlso rdf:resource="http://www.europeana.eu/schemas/edm/isShownBy"/>
   </rdfs:Property>
 
-  <rdfs:Property rdf:about="#isShownAt">
+  <rdfs:Property rdf:about="http://uri.hab.de/ontology/emblem#isShownAt">
     <rdfs:seeAlso rdf:resource="http://www.europeana.eu/schemas/edm/isShownAt"/>
   </rdfs:Property>
 
