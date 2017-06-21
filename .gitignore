@@ -1,2 +1,4 @@
 examples/*.rdf
-/output/
+/emblems/
+emblems.rdf
+emblens.nt

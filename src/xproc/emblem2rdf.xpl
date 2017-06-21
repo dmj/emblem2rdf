@@ -1,39 +1,27 @@
-<p:declare-step version="1.0" name="emblem2rdf"
+<p:declare-step version="1.0"
+                xmlns:c="http://www.w3.org/ns/xproc-step"
+                xmlns:cx="http://xmlcalabash.com/ns/extensions"
+                xmlns:e="http://emblem2rdf.org/ns/xproc"
                 xmlns:emblem="http://diglib.hab.de/rules/schema/emblem"
                 xmlns:embrdf="http://uri.hab.de/ontology/emblem#"
-                xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-                xmlns:cx="http://xmlcalabash.com/ns/extensions"
-                xmlns:c="http://www.w3.org/ns/xproc-step"
-                xmlns:e="http://emblem2rdf.org/ns/xproc"
-                xmlns:h="http://www.w3.org/1999/xhtml"
-                xmlns:p="http://www.w3.org/ns/xproc">
-
-  <p:documentation xmlns="http://www.w3.org/1999/xhtml">
-    This pipeline reads one or more emblem book descriptions, encoded in <a href="http://diglib.hab.de/rules/schema/emblem">Emblem Schema</a> and
-    creates emblem descriptions modelled after the <a href="http://uri.hab.de/ontology/emblem">Wolfenbüttel Core Emblem Ontology</a>.
-  </p:documentation>
+                xmlns:mods="http://www.loc.gov/mods/v3"
+                xmlns:p="http://www.w3.org/ns/xproc"
+                xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
 
   <p:input  port="source" primary="true" sequence="true"/>
   <p:output port="result" primary="true" sequence="true"/>
-  <p:output port="beacon" sequence="false">
-    <p:pipe step="make-beacon" port="result"/>
-  </p:output>
 
-  <p:option name="errors"  required="false" select="''"/>
   <p:option name="emblems" required="false" select="''"/>
 
   <p:import href="http://xmlcalabash.com/extension/steps/library-1.0.xpl"/>
 
   <p:declare-step type="e:validate-skip">
-    <p:documentation>
-      Validate emblem descriptions and remove those that are invalid.
-    </p:documentation>
+
     <p:input  port="source" primary="true" sequence="true"/>
     <p:output port="result" primary="true" sequence="true"/>
-    <p:option name="errors" required="false" select="''"/>
 
     <p:viewport match="emblem:biblioDesc">
-      <p:variable name="recordId" select="emblem:biblioDesc/*:mods/*:recordInfo/*:recordIdentifier"/>
+      <p:variable name="recordId" select="emblem:biblioDesc/mods:mods/mods:recordInfo/mods:recordIdentifier"/>
       <p:try name="validate">
         <p:group>
           <p:validate-with-xml-schema assert-valid="true">
@@ -52,33 +40,22 @@
       </p:try>
 
      <p:choose>
-       <p:when test="($errors != '') and /c:errors">
+       <p:when test="/c:errors">
          <cx:message>
-           <p:with-option name="message" select="concat('Validation error PPN ', $recordId)"/>
+           <p:with-option name="message" select="concat('Validation error ', $recordId)"/>
          </cx:message>
-         <p:store method="xml">
-           <p:with-option name="href" select="concat($errors, '.', $recordId)"/>
-         </p:store>
-         <p:identity>
-           <p:input port="source">
-             <p:inline>
-               <skip/>
-             </p:inline>
-           </p:input>
-         </p:identity>
        </p:when>
        <p:otherwise>
          <p:identity/>
        </p:otherwise>
      </p:choose>
+
     </p:viewport>
 
   </p:declare-step>
 
   <p:declare-step type="e:transform-emblems">
-    <p:documentation>
-      Replace all emblem descriptions with the corresponding RDF/XML serialization.
-    </p:documentation>
+
     <p:input  port="source" primary="true" sequence="true"/>
     <p:output port="result" primary="true" sequence="true"/>
 
@@ -105,9 +82,7 @@
   </p:declare-step>
 
   <p:declare-step type="e:emblembook-metadata" name="emblembook-metadata">
-    <p:documentation>
-      Augment each emblem with statements about the containing emblem book, if possible.
-    </p:documentation>
+
     <p:input  port="source" primary="true" sequence="true"/>
     <p:output port="result" primary="true" sequence="true"/>
 
@@ -139,16 +114,13 @@
   </p:declare-step>
 
   <p:declare-step type="e:store-emblem-instances" name="store-emblem-instances">
-    <p:documentation>
-      Store RDF/XML and HTML for each emblem instance.
-    </p:documentation>
 
     <p:input  port="source" primary="true" sequence="true"/>
 
     <p:option name="targetBaseDir" required="true"/>
 
     <p:for-each name="iterate">
-      <p:iteration-source select="//rdf:RDF[embrdf:Emblem[starts-with(@rdf:about, 'http://hdl.handle.net/10111/EmblemRegistry:')]]"/>
+      <p:iteration-source select="//rdf:RDF[embrdf:Emblem[matches(@rdf:about, '^http://hdl\.handle\.net/10111/EmblemRegistry:E[0-9]+')]]"/>
       <p:variable name="emblemId" select="substring(/rdf:RDF/embrdf:Emblem/@rdf:about, 44)"/>
       <p:variable name="basename" select="concat($targetBaseDir, '/', $emblemId)"/>
 
@@ -181,24 +153,9 @@
 
   </p:declare-step>
 
-  <e:validate-skip name="validate-source">
-    <p:with-option name="errors" select="$errors"/>
-    <p:input port="source">
-      <p:pipe step="emblem2rdf" port="source"/>
-    </p:input>
-  </e:validate-skip>
-
-  <e:transform-emblems name="transform-emblems">
-    <p:input port="source">
-      <p:pipe step="validate-source" port="result"/>
-    </p:input>
-  </e:transform-emblems>
-
-  <e:emblembook-metadata name="emblembook-metadata">
-    <p:input port="source">
-      <p:pipe step="transform-emblems" port="result"/>
-    </p:input>
-  </e:emblembook-metadata>
+  <e:validate-skip/>
+  <e:transform-emblems/>
+  <e:emblembook-metadata name="emblembook-metadata"/>
 
   <p:choose>
     <p:when test="$emblems != ''">
@@ -219,18 +176,6 @@
       <p:pipe step="emblembook-metadata" port="result"/>
     </p:input>
   </p:wrap-sequence>
-
-  <p:xslt name="make-beacon">
-    <p:input port="source">
-      <p:pipe step="wrap-emblems" port="result"/>
-    </p:input>
-    <p:input port="stylesheet">
-      <p:document href="../xslt/beacon.xsl"/>
-    </p:input>
-    <p:input port="parameters">
-      <p:empty/>
-    </p:input>
-  </p:xslt>
 
   <p:identity>
     <p:input port="source">

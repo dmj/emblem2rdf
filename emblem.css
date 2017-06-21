@@ -1,0 +1,9 @@
+h1 { font-size: xx-large; }
+h2 { font-size: x-large; }
+samp { display: inline-block; }
+.entity { display: table; }
+.entity { margin-left: 1em; }
+.property { display: table-row; }
+.label { display: table-cell; font-weight: bold; width: 12em; }
+.value { display: table-cell; }
+.value > span + span:before { content: " · "; }
