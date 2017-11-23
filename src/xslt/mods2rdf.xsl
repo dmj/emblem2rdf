@@ -1,6 +1,7 @@
 <xsl:transform version="2.0"
                xpath-default-namespace="http://www.loc.gov/mods/v3"
                xmlns:dct="http://purl.org/dc/terms/"
+               xmlns:rdau="http://rdaregistry.info/Elements/u/"
                xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
                xmlns:foaf="http://xmlns.com/foaf/0.1/"
                xmlns:marcrel="http://id.loc.gov/vocabulary/relators/"
@@ -41,8 +42,14 @@
     </dct:subject>
   </xsl:template>
 
-  <xsl:template match="dateIssued">
-    <dct:issued><xsl:value-of select="."/></dct:issued>
+  <xsl:template match="originInfo[dateIssued]">
+    <dct:issued><xsl:value-of select="dateIssued"/></dct:issued>
+    <xsl:if test="place/placeTerm[@type = 'text']">
+      <rdau:P60163><xsl:value-of select="place/placeTerm[@type = 'text']"/></rdau:P60163>
+    </xsl:if>
+    <xsl:if test="publisher">
+      <rdau:P60547><xsl:value-of select="publisher"/></rdau:P60547>
+    </xsl:if>
   </xsl:template>
 
   <xsl:template match="name[@type = 'personal'][role/roleTerm[@authority = 'marcrelator' and @type = 'code']]">
