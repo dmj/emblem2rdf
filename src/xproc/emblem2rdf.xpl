@@ -136,6 +136,10 @@
         </p:input>
       </p:xslt>
 
+      <cx:message>
+        <p:with-option name="message" select="concat('Saving ', $emblemId)"/>
+      </cx:message>
+
       <p:store method="html" omit-xml-declaration="true" version="4.0">
         <p:with-option name="href" select="concat($basename, '.html')"/>
         <p:input port="source">
@@ -149,6 +153,7 @@
           <p:pipe step="iterate" port="current"/>
         </p:input>
       </p:store>
+
     </p:for-each>
 
   </p:declare-step>
