@@ -20,12 +20,12 @@
       <xsl:apply-templates/>
     </rdf:RDF>
   </xsl:template>
-  
+
   <xsl:template match="emblem">
     <emblem:Emblem>
       <xsl:if test="@globalID"><xsl:attribute name="rdf:about" select="@globalID"/></xsl:if>
       <xsl:apply-templates select="@xlink:href"/>
-      
+
       <xsl:copy-of select="emblem:label(.)"/>
       <xsl:apply-templates/>
     </emblem:Emblem>
@@ -36,7 +36,7 @@
       <emblem:Motto>
         <xsl:if test="@globalID"><xsl:attribute name="rdf:about" select="@globalID"/></xsl:if>
         <xsl:apply-templates select="@xlink:href"/>
-        
+
         <xsl:apply-templates/>
       </emblem:Motto>
     </emblem:hasPart>
@@ -47,7 +47,7 @@
       <emblem:Subscriptio>
         <xsl:if test="@globalID"><xsl:attribute name="rdf:about" select="@globalID"/></xsl:if>
         <xsl:apply-templates select="@xlink:href"/>
-        
+
         <xsl:apply-templates/>
       </emblem:Subscriptio>
     </emblem:hasPart>
@@ -58,7 +58,7 @@
       <emblem:Pictura>
         <xsl:if test="@globalID"><xsl:attribute name="rdf:about" select="@globalID"/></xsl:if>
         <xsl:apply-templates select="@xlink:href"/>
-        
+
         <xsl:if test="@medium = 'engraving'">
           <dct:medium>
             <skos:Concept>
@@ -66,7 +66,7 @@
               <skos:prefLabel xml:lang="de">Stich (Gravur)</skos:prefLabel>
               <skos:prefLabel xml:lang="en">Engraving</skos:prefLabel>
             </skos:Concept>
-          </dct:medium>   
+          </dct:medium>
         </xsl:if>
         <xsl:for-each select="iconclass">
           <dct:subject>
@@ -93,7 +93,7 @@
       <emblem:TextSegment>
         <xsl:if test="@globalID"><xsl:attribute name="rdf:about" select="@globalID"/></xsl:if>
         <xsl:apply-templates select="@xlink:href"/>
-        
+
         <xsl:if test="matches(@xml:lang, '^[a-zA-Z]{2,3}$')">
           <dct:language rdf:datatype="http://purl.org/dc/terms/RFC4646">
             <xsl:value-of select="@xml:lang"/>
@@ -139,5 +139,5 @@
       </xsl:if>
     </skos:prefLabel>
   </xsl:function>
-  
+
 </xsl:transform>
